@@ -1,0 +1,53 @@
+{
+    "result": {
+        "error_code": 0,
+        "error_message": "success"
+    },
+    "items": [
+        {
+            "name": "downloadUrl",
+            "data_name": "正式版下载地址",
+            "value": "\"http://dldir1.qq.com/tgc/wegame/mini/repo/WeGameMiniLoader.std.2.03.03.2031.exe\"",
+            "item_id": "1",
+            "item_update_time": "2020-04-05 00:27:53"
+        },
+        {
+            "name": "links",
+            "data_name": "友情链接",
+            "value": "[{\n\t\"name\": \"QQ阅读\",\n\t\"url\": \"http://book.qq.com\"\n}, {\n\t\"name\": \"腾讯GWB\",\n\t\"url\": \"http://gad.qq.com\"\n}, {\n\t\"name\": \"腾讯动漫\",\n\t\"url\": \"http://ac.qq.com\"\n}, {\n\t\"name\": \"腾讯视频\",\n\t\"url\": \"http://v.qq.com\"\n}]",
+            "item_id": "2",
+            "item_update_time": "2019-12-03 17:06:53"
+        },
+        {
+            "name": "deployDate",
+            "data_name": "正式发布日期",
+            "value": "\"2017-9-1\"",
+            "item_id": "3",
+            "item_update_time": "2017-08-24 10:00:30"
+        },
+        {
+            "name": "downloads",
+            "data_name": "各版本下载链接",
+            "value": "[{\n\t\"name\": \"PC端\",\n\t\"type\": \"pc\",\n\t\"url\": \"http://dldir1.qq.com/tgc/wegame/mini/repo/WeGameMiniLoader.std.2.03.03.2031.exe\"\n}]",
+            "item_id": "4",
+            "item_update_time": "2020-04-05 00:28:06"
+        },
+        {
+            "name": "download_url_embedded",
+            "data_name": "详情页联想预装脱端下载游戏地址",
+            "value": "\"https://gamecentp.vgs.lenovo.com.cn/public/cent2tpl/dist/gameLibrary.html?gameId=210807&isOpen=1&plf=wegame\"",
+            "item_id": "5",
+            "item_update_time": "2019-06-04 11:00:39"
+        },
+        {
+            "name": "repo_repair_cfg",
+            "data_name": "WeGame修复配置",
+            "value": "{}",
+            "item_id": "6",
+            "item_update_time": "2020-06-10 17:57:27"
+        }
+    ],
+    "total_items": 6,
+    "start_page": 0,
+    "items_per_pager": 50
+}

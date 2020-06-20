@@ -1,0 +1,43 @@
+{
+    "result": 0,
+    "data": {
+        "child_list": [
+            {
+                "ads_info": {
+                    "game_type": "0",
+                    "ad_description": "格斗网游王者之作",
+                    "task_id": "20853",
+                    "game_purchase_state": 1,
+                    "task_priority": "1",
+                    "game_cover": "https://wegame.gtimg.com/g.1-r.e425e/info/oss_58f969e70e579.jpg",
+                    "other_info": "{\"active_page\":\"\",\"image\":\"https://wegame.gtimg.com/g.1-r.e425e/adm/15924636893882.jpeg\",\"little_image\":\"https://wegame.gtimg.com/g.1-r.e425e/adm/15924610363882.jpeg\",\"tpl_type\":1,\"video\":\"\"}\n",
+                    "master_game_id": 0,
+                    "ad_link": "{\"type\":\"open_web\",\"browser\":\"multi_web\",\"url\":\"https://dnf.qq.com/cp/a20200618login/?ADTAG=cop.innercop.wegame&wg_ad_from=backgroundImage\",\"from\":\"backgroundImage\",\"use_ptlogin\":0,\"size_type\":\"MAX\"}",
+                    "ad_type": "0",
+                    "report_info": "0#online#1592409600#1592495999#2000#20853#1588236828#1#config",
+                    "game_price_state": 1,
+                    "game_3rd_class": "",
+                    "game_id": "1",
+                    "disable_independent_sale": 0,
+                    "begin_time": "1592409600",
+                    "ad_id": "1588236828",
+                    "game_category": 0,
+                    "task_title": "DNF",
+                    "end_time": "1592495999",
+                    "sub_game_type": 0,
+                    "game_screen_list": [
+                        "https://wegame.gtimg.com/g.1-r.e425e/info/oss_59816deeb24d6.jpg",
+                        "https://wegame.gtimg.com/g.1-r.e425e/info/oss_59816df6a88d8.jpg"
+                    ],
+                    "game_name": "地下城与勇士",
+                    "task_type": "1",
+                    "game_top_class": "1",
+                    "game_4th_class": ""
+                },
+                "child_pos_id": "2001"
+            }
+        ],
+        "parent_id": "2000"
+    },
+    "error_msg": "ok"
+}

@@ -1,0 +1,63 @@
+{
+    "result": 1,
+    "data": {
+        "next": 0,
+        "latest": 1592489034787,
+        "time_list": [
+            {
+                "in_repl_num": 0,
+                "ext_meta": {
+                    "gametags": [
+                        {
+                            "tagid": ""
+                        }
+                    ]
+                },
+                "source": "",
+                "time": 1592489034787,
+                "master_flag": 0,
+                "tran_num": 0,
+                "game_id": 2001410,
+                "essential_code": 0,
+                "total_repliers": 0,
+                "source_type": 0,
+                "total_commenters": 0,
+                "comm_num": 1,
+                "tiid": "",
+                "in_comm_num": 1,
+                "expose_num": 12,
+                "can_trend": 1,
+                "master_time": 0,
+                "hot_score": 8000,
+                "show_flag": 1,
+                "owner_game_id": "2001410",
+                "send_date": "2020-06-18 22:03:54",
+                "master_org_info": {
+                    "org_id": "2001410",
+                    "org_name": "失落之岛"
+                },
+                "usi": [],
+                "trend_num": 0,
+                "can_great": 1,
+                "now_time": 1592490768,
+                "great_num": 0,
+                "owner_fans_count": 0,
+                "owner": "366208112",
+                "hotrank": 0,
+                "stat": 0,
+                "org_info": [
+                    {
+                        "org_id": "2001410",
+                        "org_name": "失落之岛"
+                    }
+                ],
+                "type": 4,
+                "hot_comm_num": 0,
+                "iid": "6a2a61ef5f43448d93b204ac88cb2112",
+                "data": "{\"content\":\"感谢大家关注并参与《乱·失落之岛》的测试抢号活动。《乱·失落之岛》作为一款特色吃鸡游戏，融合了航海，寻宝，生存等多种元素，目前游戏还有待进一步优化和开发，更多隐藏乐趣大家可以自己去探索和发现。再次感谢大家的支持，后续希望参与测试的玩家能踊跃发声，有什么问题及时沟通和反馈，和我们一起创造一个友好的游戏环境。\\n测试安排：\\n        6月18号-6月27号 每天上午11点开始放号，持续10天，每天1000\\n        6月22号（开测首日）测试时间为 15:00:00-23:59:59\\n        6月23号-7月1号 测试时间为 19:00:00-23:59:59 \\n\\n       温馨提示：测试时间结束后服务器将自行关闭，届时将无法开始新游戏，请合理安排游戏时间，谢谢大家！\",\"source\":\"\",\"video_urls\":[],\"link_urls\":[],\"inline_image_urls\":[],\"number\":347,\"at_list\":[]}"
+            }
+        ],
+        "result": 0,
+        "is_finish": 1
+    }
+}

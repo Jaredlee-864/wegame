@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+html,body,ul,ol,li,dd,dt,dl,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input,figure,figcaption{
+    margin:0;
+    padding:0;
+}
+header,footer,section,article,aside,nav,main,hgroup{
+    display:block;
+}
+body{
+    font-size:16px;
+    font-family:"微软雅黑" arial;
+}
+
+ul,ol,li{
+    list-style:none;
+}
+a,u{
+    text-decoration: none;
+}
+b,strong{
+    font-weight:normal;
+}
+em,i{
+    font-style:normal;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 16px;
+    font-weight:normal;
+}
+img{
+    display:block;
+    border:0;
+}
+fieldset{
+    border:0
+}
+textarea{
+    resize:none;
+}
+
+/* 封装类名 */
+.border_none{
+    border:none!important;
+}
+.float_left{
+    float:left;
+}
+.float_right{
+    float:right;
+}
+
+/* 单行文本溢出 */
+.text_ellipsis{
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+/* 各种居中 */
+/* 浏览器窗口居中 */
+.fixed_center{
+    position:fixed;
+    left:0;
+    right:0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+/* 子元素在父元素中居中 */
+.dom_center{
+    position:absolute;
+    left:0;
+    right:0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+/* 万能清楚法 */
+.clear_fix:after{
+    content: "";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+.clear_fix{
+    zoom:1;
+}
+/* 触发怪异盒 */
+.border_box{
+    box-sizing:border-box;
+}

@@ -1,0 +1,56 @@
+{
+    "result": {
+        "error_code": 0,
+        "error_message": "success"
+    },
+    "items": [
+        {
+            "nav_title": "商店",
+            "nav_name": "header_store",
+            "nav_link": "/store",
+            "data_name": "商店",
+            "item_id": "1",
+            "item_update_time": "2019-05-09 10:37:05",
+            "nav_index": "0"
+        },
+        {
+            "nav_title": "客户端",
+            "nav_name": "header_client",
+            "nav_link": "/client",
+            "data_name": "客户端",
+            "item_id": "2",
+            "item_update_time": "2019-05-09 10:37:58",
+            "nav_index": "1"
+        },
+        {
+            "nav_title": "移动端",
+            "nav_name": "header_mobile",
+            "nav_link": "/mobile",
+            "data_name": "移动端",
+            "item_id": "3",
+            "item_update_time": "2019-05-09 10:38:24",
+            "nav_index": "2"
+        },
+        {
+            "nav_title": "帮助反馈",
+            "nav_name": "header_feedback",
+            "nav_link": "/feedback",
+            "data_name": "帮助反馈",
+            "item_id": "4",
+            "item_update_time": "2019-05-09 10:40:30",
+            "nav_index": "4"
+        },
+        {
+            "nav_title": "翼计划",
+            "nav_name": "header_wings",
+            "nav_link": "/wings/index.html",
+            "data_name": "翼计划",
+            "item_id": "5",
+            "item_update_time": "2019-05-10 10:19:33",
+            "nav_index": "3"
+        }
+    ],
+    "total_items": 5,
+    "start_page": 0,
+    "items_per_pager": 50
+}

@@ -1,0 +1,23 @@
+{
+    "result": {
+        "error_code": 0,
+        "error_message": ""
+    },
+    "items": [
+        {
+            "game_id": "2000266",
+            "poster_url_h": "https://wegame.gtimg.com/g.2000266-r.0388d/info/357882b38f1f7501a12106fba8f94a97.jpg",
+            "e_game_name": "Night of The Full Moon"
+        },
+        {
+            "game_id": "2001006",
+            "poster_url_h": "https://wegame.gtimg.com/g.2001006-r.fb87a/info/e550a7b8c926236a99f232cea16aebc6.jpg",
+            "e_game_name": "Night Homing"
+        },
+        {
+            "game_id": "2000104",
+            "poster_url_h": "https://wegame.gtimg.com/g.2000104-r.7e14a/info/15046003636802.jpg",
+            "e_game_name": "Hand of Fate"
+        }
+    ]
+}

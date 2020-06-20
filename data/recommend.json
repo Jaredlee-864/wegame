@@ -1,0 +1,26 @@
+{
+    "result": {
+        "error_code": 0,
+        "error_message": "success"
+    },
+    "items": [
+        {
+            "is_dark": "1",
+            "title": "千层套路，万般牌局！",
+            "data_name": "卡牌类游戏专题",
+            "game_list": [
+                "2000266",
+                "2001006",
+                "2000104"
+            ],
+            "summary": "打牌一时爽，一直打牌一直爽！新时代的卡牌游戏带给人迥然不同的游戏体验，RogueLike+RPG+抽卡将是三倍的快乐。理清思路，整理牌局，成为卡牌大师，游刃有余地穿梭异世界。接下来，就是我的回合！",
+            "jump_url": "https://www.wegame.com.cn/platform/article/detail.html?feedsid=0ece7e64f32f448db5f1bd74fc654bb6&articleId=8907b4c6f92b40599697df650b3ef994",
+            "item_update_time": "2020-05-29 22:04:52",
+            "item_id": "8",
+            "bg_url": "https://wegame.gtimg.com/g.55555-r.c4663/oss-images/oss_5ed11358914dd.png"
+        }
+    ],
+    "total_items": 1,
+    "start_page": 0,
+    "items_per_pager": 50
+}

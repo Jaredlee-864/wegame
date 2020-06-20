@@ -1,0 +1,57 @@
+{
+    "result": {
+        "error_code": 0,
+        "error_message": ""
+    },
+    "total_items": 6,
+    "items": [
+        {
+            "game_name": "失落之岛",
+            "game_id": "2001410",
+            "publish_time": 1592809200,
+            "week_follow_num": 0,
+            "total_follow_num": 0,
+            "testing_first_begin_time": "1592449200"
+        },
+        {
+            "game_name": "超级巴基球(Super Buckyball Tournament)",
+            "game_id": "2001011",
+            "publish_time": 1586949600,
+            "week_follow_num": 63,
+            "total_follow_num": 2454,
+            "testing_first_begin_time": "1586949600"
+        },
+        {
+            "game_name": "永进",
+            "game_id": "2001369",
+            "publish_time": 1590670800,
+            "week_follow_num": 30,
+            "total_follow_num": 370,
+            "testing_first_begin_time": "1580216400"
+        },
+        {
+            "game_name": "快到碗里来",
+            "game_id": "2001103",
+            "publish_time": 1579226920,
+            "week_follow_num": 17,
+            "total_follow_num": 1244,
+            "testing_first_begin_time": "1579233600"
+        },
+        {
+            "game_name": "龙魂：学院奇闻",
+            "game_id": "2001102",
+            "publish_time": 1576825200,
+            "week_follow_num": 14,
+            "total_follow_num": 1860,
+            "testing_first_begin_time": "1577174400"
+        },
+        {
+            "game_name": "幸福勇者",
+            "game_id": "2001065",
+            "publish_time": 1569895200,
+            "week_follow_num": 160,
+            "total_follow_num": 42396,
+            "testing_first_begin_time": "1562306400"
+        }
+    ]
+}

@@ -1,0 +1,179 @@
+{
+    "result": {
+        "error_code": 0,
+        "error_message": "suceces"
+    },
+    "store_searchtags": [
+        {
+            "item_update_time": "2020-04-24 10:10:00",
+            "position": "",
+            "hignlight": "",
+            "v": "",
+            "type": "1",
+            "data_name": "大型网游",
+            "game_type": "",
+            "tag": "大型网游",
+            "appid": "",
+            "item_id": "2",
+            "exclude": "",
+            "svg_id": ""
+        },
+        {
+            "item_update_time": "2020-04-24 10:10:00",
+            "position": "",
+            "hignlight": "",
+            "v": "",
+            "type": "1",
+            "data_name": "单机",
+            "game_type": "",
+            "tag": "单机",
+            "appid": "",
+            "item_id": "3",
+            "exclude": "",
+            "svg_id": ""
+        },
+        {
+            "item_update_time": "2020-06-18 12:09:18",
+            "position": "",
+            "hignlight": "#ff8c00",
+            "v": "https://bns.qq.com/?ADTAG=cop.innercop.wegame.2006",
+            "type": "3",
+            "data_name": "剑灵",
+            "game_type": "1",
+            "tag": "剑灵火箭服",
+            "appid": "",
+            "item_id": "68",
+            "exclude": "",
+            "svg_id": ""
+        },
+        {
+            "item_update_time": "2020-06-15 18:37:30",
+            "position": "",
+            "hignlight": "#ff3300",
+            "v": "2001128",
+            "type": "2",
+            "data_name": "激战2",
+            "game_type": "1",
+            "tag": "激战2开服啦",
+            "appid": "",
+            "item_id": "77",
+            "exclude": "",
+            "svg_id": ""
+        },
+        {
+            "item_update_time": "2020-06-09 11:50:42",
+            "position": "",
+            "hignlight": "#ff3300",
+            "v": "2001255",
+            "type": "2",
+            "data_name": "仙侠世界2",
+            "game_type": "1",
+            "tag": "仙侠火爆开服",
+            "appid": "",
+            "item_id": "75",
+            "exclude": "",
+            "svg_id": ""
+        }
+    ],
+    "store_head_operation": [
+        {
+            "title": "排行榜",
+            "url": "https://www.wegame.com.cn/rail/rank_detail.html",
+            "data_name": "排行榜",
+            "app_id": "50000013",
+            "item_id": "5",
+            "item_update_time": "2020-05-12 16:35:14"
+        },
+        {
+            "title": "娱乐应用",
+            "url": "https://www.wegame.com/rail/wegame_functional_games.html?aid=11",
+            "data_name": "娱乐应用",
+            "app_id": "50000013",
+            "item_id": "6",
+            "item_update_time": "2020-05-11 19:40:20"
+        }
+    ],
+    "wegame_search_hot_tags": [
+        {
+            "title": "铁甲雄兵",
+            "url": "",
+            "data_name": "铁甲雄兵",
+            "item_update_time": "2020-04-14 16:47:02",
+            "is_new": "1",
+            "game_id": "2000806",
+            "item_id": "58",
+            "position": "5"
+        },
+        {
+            "title": "剑网3",
+            "url": "",
+            "data_name": "剑网3",
+            "item_update_time": "2019-10-15 13:24:43",
+            "is_new": "0",
+            "game_id": "2000931",
+            "item_id": "76",
+            "position": "3"
+        },
+        {
+            "title": "激战2",
+            "url": "",
+            "data_name": "激战2",
+            "item_update_time": "2020-06-13 00:16:46",
+            "is_new": "1",
+            "game_id": "2001128",
+            "item_id": "95",
+            "position": "0"
+        },
+        {
+            "title": "梦三国2",
+            "url": "",
+            "data_name": "梦三国2",
+            "item_update_time": "2020-05-30 19:50:06",
+            "is_new": "1",
+            "game_id": "2001141",
+            "item_id": "88",
+            "position": "4"
+        },
+        {
+            "title": "永恒之塔",
+            "url": "",
+            "data_name": "永恒之塔",
+            "item_update_time": "2020-05-30 19:49:57",
+            "is_new": "1",
+            "game_id": "2001234",
+            "item_id": "92",
+            "position": "1"
+        },
+        {
+            "title": "亦春秋",
+            "url": "",
+            "data_name": "亦春秋",
+            "item_update_time": "2020-06-04 14:48:24",
+            "is_new": "1",
+            "game_id": "2001404",
+            "item_id": "94",
+            "position": "2"
+        }
+    ],
+    "store_header_switch": [
+        {
+            "testing": "1",
+            "data_name": "switch",
+            "item_id": "1",
+            "item_update_time": "2019-08-28 19:35:07",
+            "wings": "0"
+        }
+    ],
+    "category_info": [
+        {
+            "jump_json": "",
+            "category_short": "应用",
+            "data_name": "娱乐应用",
+            "item_id": "3",
+            "item_update_time": "2019-09-27 20:48:45",
+            "category_id": "10",
+            "order_priority": "0",
+            "category_name": "娱乐应用"
+        }
+    ]
+}
