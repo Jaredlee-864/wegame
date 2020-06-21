@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css" />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/iconfont.css" />
@@ -211,7 +212,117 @@
       </div>
       <!-- 主数据加载区 -->
       <div class="fr-page-cont" id="dvMain">
-        <!--  -->
+        <!-- banner区 -->
+        <div id="banner">
+          <div class="banner-box">
+            <div class="swiper-container1 main-banner">
+              <div class="swiper-wrapper banner-swiper-wrapper">
+                <!-- <div class="swiper-slide">
+                  <a href="/store/48" alt="剑灵" class="gbanner-slider-link"
+                    ><img
+                      src="https://wegame.gtimg.com/g.48-r.f5a22/adm/15924660284167.jpeg?nosharpp=1"
+                      class="gbanner-slider-img"
+                  /></a>
+                </div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div> -->
+              </div>
+              <div class="swiper-pagination main-banner-page">
+                <!-- <li class="gbanner-menu-li gbanner--promo">
+                  <a href="/store/48" class="gbanner-menu-link"
+                    ><div class="gbanner-menu-tit">
+                      <strong class="gbanner-tag gbanner-tag--act"
+                        ><span class="gbanner-tag-inner">活动</span>
+                        </strong
+                      >
+                      <strong class="gbanner-menu-text">剑灵</strong>
+                    </div>
+                    <p class="gbanner-menu-desc">UP!火箭区满服加推</p></a
+                  > -->
+                </li>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 热点预告区 -->
+        <div id="dvAppointment" lang="cn" class="tui-panel panel-main-cont panel-future-game skin-panel txp_video_hide">
+          <div class="skin-panel-inner">
+            <div class="tui-panel-hd">
+              <h2 class="tui-panel-tit">热点预告</h2>
+            </div>
+            <div class="tui-panel-bd">
+              <div class="swiper-container2" dir="rtl">
+                <div class="swiper-wrapper hot-swiper-wrapper">
+                  <!-- <ul class="tui-slider-list cf"> -->
+                <!--     <li class="soon">
+                      <div class="widget-future-game-item">
+                        <div class="date-flow">
+                          <div class="date-flow-date"><strong>5月</strong></div>
+                          <div class="date-flow-desc"><span>今日开服</span></div>
+                          <div class="date-flow-bg">
+                            <svg>
+                              <use xlink:href="#icon-svg-yg-bg" class="svguse-ygbg"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div
+                          class="widget-gcard widget-gcard--yg we-popover__reference"
+                          aria-describedby="we-popover-2120"
+                          tabindex="0"
+                        >
+                          <div class="widget-gcard-wp">
+                            <div class="widget-gcard-cover">
+                              <a href="/store/54">
+                                <div class="we-image we-image--square">
+                                  <img
+                                    src="https://wegame.gtimg.com/g.54-r.3237e/oss-images/oss_5ecf21aa7adbc.jpg"
+                                    class="we-image-figure"
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                            <div class="widget-gcard-info">
+                              <div class="widget-gcard-tit"><strong>天堂</strong></div>
+                              <div class="widget-gcard-meta"><span>传奇职业大剑士</span></div>
+                              <div class="widget-gcard-infobtn">
+                                <div class="widget-gcard-btn gcard-btn-follow _followBtn">
+                                  <i class="gcard-ico-follow"></i>
+                                  <div class="widget-gcard-infobtn-text">
+                                    <span class="widget-gcard-infobtn-text-item txt-item--cur"
+                                      >已关注</span
+                                    >
+                                    <span class="widget-gcard-infobtn-text-item txt-item--normal"
+                                      >关注</span
+                                    >
+                                  </div>
+                                </div>
+                                <a href="/store/54" class="widget-gcard-btn"
+                                  ><span>游戏详情</span></a
+                                >
+                              </div>
+                              <div class="forenotice-tag">
+                                <div class="forenotice-tag-inner"><span>游戏</span></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li> -->
+                  <!-- </ul> -->
+                </div>
+                <!-- Add Pagination -->
+                <!-- <div class="hot-swiper-pagination"></div> -->
+                <!-- Add Arrows -->
+                <div class="swiper-button-next hotnext"></div>
+                <div class="swiper-button-prev hotprev"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!--  -->
       <!-- 右侧导航锚点 -->
@@ -473,5 +584,6 @@
       </div>
     </div>
   </body>
+  <script src="../js/swiper.min.js"></script>
   <script src="../js/index.js"></script>
 </html>
