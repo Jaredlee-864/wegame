@@ -1,5 +1,6 @@
 $(function () {
   // 搜索框渲染
+  $("html body").append();
   $(".tui-search input").on("focus", () => {
     $("#dropdown-menu").show();
     $.getJSON("../data/hotsearch.json", (data) => {
@@ -227,4 +228,6 @@ $(function () {
       },
     });
   });
+  //登陆按钮功能
+  $(".header-right-login-btn").click(function () {});
 });

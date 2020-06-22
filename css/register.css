@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+li {
+  list-style: none;
+}
+.left {
+  width: 35%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.left a {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url(https://cdn-go.cn/qq-web/zc.qq.com/12ea5880/v3/img/logo.png)
+    no-repeat;
+  background-size: 36px 43px;
+  height: 43px;
+  line-height: 43px;
+  padding-left: 46px;
+  margin-left: 30px;
+  margin-top: 18px;
+  font-size: 36px;
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+.left img {
+  width: 100%;
+  height: 100%;
+}
+.header {
+  width: 1040px;
+  height: 100px;
+  float: right;
+}
+.top {
+  float: right;
+}
+.header li {
+  float: left;
+  padding: 0 50px;
+  line-height: 100px;
+}
+.header li a {
+  color: #c1c1c1;
+  text-decoration: none;
+}
+.header .goodnum {
+  position: relative;
+  height: 24px;
+  border-radius: 6px;
+  display: inline-block;
+  line-height: 24px;
+  margin: 10px 0 0 5px;
+  padding: 0 10px 0 24px;
+  background: linear-gradient(126deg, #fc4754, #ff794c) #f54;
+}
+.header .goodnum a {
+  color: white;
+}
+.goodnum img {
+  width: 23px;
+  height: 32px;
+  position: absolute;
+  left: -10px;
+  bottom: 0;
+  z-index: 1;
+}
+.header li a:hover {
+  font-weight: 400;
+  color: black;
+}
+.right {
+  width: 1040px;
+  position: absolute;
+  right: 0;
+  top: 200px;
+}
+.main {
+  width: 500px;
+  margin: 0 auto;
+}
+.one h4 {
+  font-size: 44px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.two {
+  font-size: 28px;
+  color: #333333;
+  margin-bottom: 64px;
+  float: left;
+}
+.there {
+  float: right;
+  margin-bottom: 64px;
+}
+.there a {
+  font-size: 28px;
+  text-decoration: none;
+  color: #359eff;
+}
+.there a:hover {
+  color: #094683;
+}
+.input-outer input {
+  box-sizing: border-box;
+  padding: 0 0 0 15px;
+  height: 50px;
+  width: 438px;
+
+  border-radius: 10px;
+  border: 1px solid #c1c1c1;
+  /*color: #c1c1c1;*/
+  font-size: 20px;
+}
+.showinfo {
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 16px;
+  line-height: 16px;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.input-type select {
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #c1c1c1;
+  font-size: 20px;
+  float: left;
+}
+.input-phone input {
+  height: 50px;
+  box-sizing: border-box;
+  width: 268px;
+  padding: 0 0 0 15px;
+  border-radius: 10px;
+  border: 1px solid #c1c1c1;
+  font-size: 20px;
+  margin-left: 20px;
+}
+.six p {
+  color: #c1c1c1;
+  font-size: 14px;
+}
+.sub input {
+  padding: 0 0 0 15px;
+  box-sizing: border-box;
+  height: 50px;
+  width: 440px;
+  margin: 40px 0;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #3588ff;
+  border: 1px solid #c1c1c1;
+  border-radius: 10px;
+}
+.type-radio span {
+  font-size: 14px;
+  color: #c1c1c1;
+}
+.footer {
+  margin: 40px 0;
+  text-align: center;
+  color: #c1c1c1;
+}

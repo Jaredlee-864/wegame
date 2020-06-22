@@ -1,59 +1,25 @@
-<li class="soon">
-  <div class="widget-future-game-item">
-    <div class="date-flow">
-      <div class="date-flow-date"><strong>5月</strong></div>
-      <div class="date-flow-desc"><span>今日开服</span></div>
-      <div class="date-flow-bg">
-        <svg>
-          <use xlink:href="#icon-svg-yg-bg" class="svguse-ygbg"></use>
-        </svg>
-      </div>
-    </div>
-    <div
-      class="widget-gcard widget-gcard--yg we-popover__reference"
-      aria-describedby="we-popover-2120"
-      tabindex="0"
-    >
-      <div class="widget-gcard-wp">
-        <div class="widget-gcard-cover">
-          <a href="/store/54">
-            <div class="we-image we-image--square">
-              <img
-                src="https://wegame.gtimg.com/g.54-r.3237e/oss-images/oss_5ecf21aa7adbc.jpg"
-                class="we-image-figure"
-              />
-            </div>
-          </a>
-        </div>
-        <div class="widget-gcard-info">
-          <div class="widget-gcard-tit"><strong>天堂</strong></div>
-          <div class="widget-gcard-meta"><span>传奇职业大剑士</span></div>
-          <!---->
-          <div class="widget-gcard-infobtn">
-            <div class="widget-gcard-btn gcard-btn-follow _followBtn">
-              <i class="gcard-ico-follow"></i>
-              <div class="widget-gcard-infobtn-text">
-                <span class="widget-gcard-infobtn-text-item txt-item--cur"
-                  >已关注</span
-                >
-                <span class="widget-gcard-infobtn-text-item txt-item--normal"
-                  >关注</span
-                >
-              </div>
-            </div>
-            <a href="/store/54" class="widget-gcard-btn"
-              ><span>游戏详情</span></a
-            >
-          </div>
-          <!---->
-          <div class="forenotice-tag">
-            <div class="forenotice-tag-inner"><span>游戏</span></div>
-          </div>
+<div class="swiper-slide">
+  <div class="figure">
+    <img
+      src=${val["poster_url_h"]}
+      alt=${val["name"]}
+      class="pic"
+    />
+  </div>
+  <div class="figure-info">
+    <h3 class="figure-info-tit">
+      <a href="https://www.wegame.com.cn/store/${val["game_id"]}>"${val["game_name"]}"</a>
+    </h3>
+    <div class="figure-other cf">
+      <div class="item f-left">
+        <div class="tui-price">
+          <span class="price-new"
+            ><i>¥</i>
+            56
+          </span>
         </div>
       </div>
-      <!---->
-      <!---->
-      <!---->
+      <div class="item f-right"></div>
     </div>
   </div>
-</li>
+</div>

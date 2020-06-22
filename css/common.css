@@ -12,8 +12,12 @@ h6 {
   font-size: 100%;
   font-weight: 400;
 }
+i {
+  font-style: normal;
+}
 a {
   cursor: pointer;
+  text-decoration: none;
 }
 html {
   width: 100%;
@@ -74,6 +78,13 @@ div {
   display: inline-block;
   margin: 0 12px;
 }
+.header-nav .cur {
+  background-color: hsla(0, 0%, 100%, 0.12);
+}
+.header-nav a:hover,
+.header-nav li.cur a:hover {
+  color: #fff;
+}
 .header-nav a {
   position: relative;
   display: block;
@@ -105,6 +116,11 @@ div {
   line-height: 36px;
   vertical-align: middle;
 }
+.header-right-dev:hover,
+.header-right-login-btn:hover {
+  background: none;
+  color: #fff;
+}
 .header-right-btn {
   display: inline-block;
   height: 36px;
@@ -118,6 +134,11 @@ div {
   font-size: 13px;
   line-height: 34px;
   text-align: center;
+}
+.header-right-btn:hover {
+  border-color: hsla(0, 0%, 100%, 0.2);
+  background-color: #ffc800;
+  color: #333;
 }
 .header-right-login {
   display: inline-block;
@@ -138,6 +159,7 @@ div {
   vertical-align: top;
 }
 .header-right-login-info {
+  display: none;
   position: relative;
   margin-left: 20px;
 }

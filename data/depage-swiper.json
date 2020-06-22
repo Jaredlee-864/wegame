@@ -1,0 +1,575 @@
+{
+    "result": {
+        "error_code": 0,
+        "error_message": ""
+    },
+    "total_items": 309,
+    "start_page": 0,
+    "items_per_pager": 12,
+    "items": [
+        {
+            "game_id": "2001404",
+            "e_game_name": "Power Of Seasons",
+            "game_name": "亦春秋",
+            "name": "亦春秋",
+            "game_type": 0,
+            "master_game_id": 0,
+            "category": "1",
+            "poster_url_h": "https://wegame.gtimg.com/g.2001404-r.9fb8d/info/97bc665777f9ee3a83659b3c5347474c.jpg",
+            "poster_url_v": "https://wegame.gtimg.com/g.2001404-r.9fb8d/info/f93ff28c59c0481244fc5394e0fa3d3b.jpg",
+            "3rd_class": "",
+            "4th_class": "",
+            "top_class": "3",
+            "sub_class": "15",
+            "show_prate": "",
+            "is_testing": 0,
+            "is_recommend_result": 0,
+            "recommend_algorithm": "",
+            "release_config": {
+                "sell": {
+                    "state": 2,
+                    "time": 1591113600
+                },
+                "download": {
+                    "state": 2,
+                    "time": 1591113600
+                },
+                "play": {
+                    "state": 2,
+                    "time": 1591113600
+                },
+                "display": {
+                    "state": 2,
+                    "time": 1590999323
+                }
+            },
+            "region_country": {
+                "price_state": 1,
+                "purchase_state": 1
+            },
+            "timeline": "",
+            "release_time": 1591113600,
+            "release_time_unsure": 0,
+            "publish_time": "2020-06-03 00:00:00",
+            "disable_independent_sale": 0,
+            "sub_game_type": 0
+        },
+        {
+            "game_id": "2000239",
+            "e_game_name": "",
+            "game_name": "元能失控",
+            "name": "元能失控",
+            "game_type": 0,
+            "master_game_id": 0,
+            "category": "1",
+            "poster_url_h": "https://wegame.gtimg.com/g.2000239-r.928b3/info/babd24721b3a25e44975e95062aa7695.jpg",
+            "poster_url_v": "https://wegame.gtimg.com/g.2000239-r.928b3/info/3bac70040dba9476d4c911f54424d985.jpg",
+            "3rd_class": "",
+            "4th_class": "",
+            "top_class": "3",
+            "sub_class": "15",
+            "show_prate": "",
+            "is_testing": 0,
+            "is_recommend_result": 0,
+            "recommend_algorithm": "",
+            "release_config": {
+                "sell": {
+                    "state": 2,
+                    "time": 1586829000
+                },
+                "download": {
+                    "state": 2,
+                    "time": 1586829000
+                },
+                "play": {
+                    "state": 2,
+                    "time": 1587434400
+                },
+                "display": {
+                    "state": 2,
+                    "time": 1586774621
+                }
+            },
+            "region_country": {
+                "price_state": 1,
+                "purchase_state": 1
+            },
+            "timeline": "",
+            "release_time": 1587434400,
+            "release_time_unsure": 0,
+            "publish_time": "2020-04-21 10:00:00",
+            "disable_independent_sale": 0,
+            "sub_game_type": 0
+        },
+        {
+            "game_id": "2001457",
+            "e_game_name": "",
+            "game_name": "德鲁伊、毛族和星之守护",
+            "name": "德鲁伊、毛族和星之守护",
+            "game_type": 1,
+            "master_game_id": 2000122,
+            "category": "1",
+            "poster_url_h": "http://cdn.rail.tgp.qq.com/info/games/2001457/54f4fe99eca2ea42b702321a6b435960.jpg",
+            "poster_url_v": "http://cdn.rail.tgp.qq.com/info/games/2001457/fc0ddf5987448ed759a0ed38a6928a1f.jpg",
+            "3rd_class": "",
+            "4th_class": "",
+            "top_class": "",
+            "sub_class": "",
+            "show_prate": "",
+            "is_testing": 0,
+            "is_recommend_result": 0,
+            "recommend_algorithm": "",
+            "release_config": {
+                "sell": {
+                    "state": 2,
+                    "time": 1591891200
+                },
+                "download": {
+                    "state": 2,
+                    "time": 1591891200
+                },
+                "play": {
+                    "state": 2,
+                    "time": 1591891200
+                },
+                "display": {
+                    "state": 2,
+                    "time": 1591891200
+                }
+            },
+            "region_country": {
+                "price_state": 1,
+                "purchase_state": 1
+            },
+            "timeline": "",
+            "release_time": 1591891200,
+            "release_time_unsure": 0,
+            "publish_time": "2020-06-12 00:00:00",
+            "disable_independent_sale": 0,
+            "sub_game_type": 0
+        },
+        {
+            "game_id": "2001049",
+            "e_game_name": "",
+            "game_name": "月圆之夜（经典版）",
+            "name": "月圆之夜（经典版）",
+            "game_type": 2,
+            "master_game_id": 0,
+            "category": "1",
+            "poster_url_h": "https://wegame.gtimg.com/g.2001049-r.ce580/info/0c55e50b03ce228e18a09ed3e6a66c89.jpg",
+            "poster_url_v": "https://wegame.gtimg.com/g.2001049-r.ce580/info/e522b64a1871075fa34abc993b0df3b9.jpg",
+            "3rd_class": "",
+            "4th_class": "",
+            "top_class": "",
+            "sub_class": "",
+            "show_prate": "",
+            "is_testing": 0,
+            "is_recommend_result": 0,
+            "recommend_algorithm": "",
+            "release_config": {
+                "sell": {
+                    "state": 2,
+                    "time": 1564105500
+                },
+                "download": {
+                    "state": 2,
+                    "time": 1564105500
+                },
+                "play": {
+                    "state": 2,
+                    "time": 1564105500
+                },
+                "display": {
+                    "state": 2,
+                    "time": 1564054662
+                }
+            },
+            "region_country": {
+                "price_state": 1,
+                "purchase_state": 1
+            },
+            "timeline": "",
+            "release_time": 1564105500,
+            "release_time_unsure": 0,
+            "publish_time": "2019-07-26 09:45:00",
+            "disable_independent_sale": 0,
+            "sub_game_type": 0
+        },
+        {
+            "game_id": "2000348",
+            "e_game_name": "Craft the World",
+            "game_name": "打造世界",
+            "name": "打造世界",
+            "game_type": 0,
+            "master_game_id": 0,
+            "category": "1",
+            "poster_url_h": "https://wegame.gtimg.com/g.2000348-r.30465/info/c125ccba7487ca88a455cdc5cad3f6ef.jpg",
+            "poster_url_v": "https://wegame.gtimg.com/g.2000348-r.30465/info/f248049f1235fa8a9a034f8f4e9f2790.jpg",
+            "3rd_class": "",
+            "4th_class": "",
+            "top_class": "3",
+            "sub_class": "15",
+            "show_prate": "",
+            "is_testing": 0,
+            "is_recommend_result": 0,
+            "recommend_algorithm": "",
+            "release_config": {
+                "sell": {
+                    "state": 2,
+                    "time": 1562860800
+                },
+                "download": {
+                    "state": 2,
+                    "time": 1562860800
+                },
+                "play": {
+                    "state": 2,
+                    "time": 1562860800
+                },
+                "display": {
+                    "state": 2,
+                    "time": 1562652693
+                }
+            },
+            "region_country": {
+                "price_state": 1,
+                "purchase_state": 1
+            },
+            "timeline": "",
+            "release_time": 1562860800,
+            "release_time_unsure": 0,
+            "publish_time": "2019-07-12 00:00:00",
+            "disable_independent_sale": 0,
+            "sub_game_type": 0
+        },
+        {
+            "game_id": "2001236",
+            "e_game_name": "",
+            "game_name": "精灵、侠盗和裂谷",
+            "name": "精灵、侠盗和裂谷",
+            "game_type": 1,
+            "master_game_id": 2000122,
+            "category": "1",
+            "poster_url_h": "https://wegame.gtimg.com/g.2001236-r.983e7/info/9d255750f33581188010157c48ce5849.jpg",
+            "poster_url_v": "https://wegame.gtimg.com/g.2001236-r.983e7/info/fc091a0b42a0d02b6abde8bbf7d7d2c1.jpg",
+            "3rd_class": "",
+            "4th_class": "",
+            "top_class": "3",
+            "sub_class": "15",
+            "show_prate": "",
+            "is_testing": 0,
+            "is_recommend_result": 0,
+            "recommend_algorithm": "",
+            "release_config": {
+                "sell": {
+                    "state": 2,
+                    "time": 1576684800
+                },
+                "download": {
+                    "state": 2,
+                    "time": 1576684800
+                },
+                "play": {
+                    "state": 2,
+                    "time": 1576684800
+                },
+                "display": {
+                    "state": 2,
+                    "time": 1576639712
+                }
+            },
+            "region_country": {
+                "price_state": 1,
+                "purchase_state": 1
+            },
+            "timeline": "",
+            "release_time": 1576684800,
+            "release_time_unsure": 0,
+            "publish_time": "2019-12-19 00:00:00",
+            "disable_independent_sale": 0,
+            "sub_game_type": 0
+        },
+        {
+            "game_id": "2001411",
+            "e_game_name": "",
+            "game_name": "《波西亚时光》合辑包",
+            "name": "《波西亚时光》合辑包",
+            "game_type": 2,
+            "master_game_id": 0,
+            "category": "1",
+            "poster_url_h": "https://wegame.gtimg.com/g.2001411-r.3b617/info/cfb477631ae6f3df180a90ef35122e0a.jpg",
+            "poster_url_v": "https://wegame.gtimg.com/g.2001411-r.3b617/info/5cf14887eafbabcd5386db149582d9d0.jpg",
+            "3rd_class": "",
+            "4th_class": "",
+            "top_class": "",
+            "sub_class": "",
+            "show_prate": "",
+            "is_testing": 0,
+            "is_recommend_result": 0,
+            "recommend_algorithm": "",
+            "release_config": {
+                "sell": {
+                    "state": 2,
+                    "time": 1588262400
+                },
+                "download": {
+                    "state": 2,
+                    "time": 1588262400
+                },
+                "play": {
+                    "state": 2,
+                    "time": 1588262400
+                },
+                "display": {
+                    "state": 2,
+                    "time": 1588262400
+                }
+            },
+            "region_country": {
+                "price_state": 1,
+                "purchase_state": 1
+            },
+            "timeline": "",
+            "release_time": 1588262400,
+            "release_time_unsure": 0,
+            "publish_time": "2020-05-01 00:00:00",
+            "disable_independent_sale": 0,
+            "sub_game_type": 0
+        },
+        {
+            "game_id": "2000266",
+            "e_game_name": "Night of The Full Moon",
+            "game_name": "月圆之夜",
+            "name": "月圆之夜",
+            "game_type": 0,
+            "master_game_id": 0,
+            "category": "1",
+            "poster_url_h": "https://wegame.gtimg.com/g.2000266-r.0388d/info/357882b38f1f7501a12106fba8f94a97.jpg",
+            "poster_url_v": "https://wegame.gtimg.com/g.2000266-r.0388d/info/3203c37bc7f11a1312fb8861be9c04d4.jpg",
+            "3rd_class": "",
+            "4th_class": "",
+            "top_class": "3",
+            "sub_class": "15",
+            "show_prate": "",
+            "is_testing": 0,
+            "is_recommend_result": 0,
+            "recommend_algorithm": "",
+            "release_config": {
+                "sell": {
+                    "state": 2,
+                    "time": 1564105500
+                },
+                "download": {
+                    "state": 2,
+                    "time": 1564105500
+                },
+                "play": {
+                    "state": 2,
+                    "time": 1564105500
+                },
+                "display": {
+                    "state": 2,
+                    "time": 1564054301
+                }
+            },
+            "region_country": {
+                "price_state": 1,
+                "purchase_state": 1
+            },
+            "timeline": "",
+            "release_time": 1564105500,
+            "release_time_unsure": 0,
+            "publish_time": "2019-07-26 09:45:00",
+            "disable_independent_sale": 0,
+            "sub_game_type": 0
+        },
+        {
+            "game_id": "2000540",
+            "e_game_name": "",
+            "game_name": "风暴岛",
+            "name": "风暴岛",
+            "game_type": 0,
+            "master_game_id": 0,
+            "category": "1",
+            "poster_url_h": "https://wegame.gtimg.com/g.2000540-r.e5a8d/info/db78729bc37e866e9828841d8e5cac55.jpg",
+            "poster_url_v": "https://wegame.gtimg.com/g.2000540-r.e5a8d/info/9e9c2efe4e0a61103a4b30721eab7cc7.jpg",
+            "3rd_class": "",
+            "4th_class": "",
+            "top_class": "3",
+            "sub_class": "15",
+            "show_prate": "",
+            "is_testing": 0,
+            "is_recommend_result": 0,
+            "recommend_algorithm": "",
+            "release_config": {
+                "sell": {
+                    "state": 2,
+                    "time": 1585709520
+                },
+                "download": {
+                    "state": 2,
+                    "time": 1585709520
+                },
+                "play": {
+                    "state": 2,
+                    "time": 1585709520
+                },
+                "display": {
+                    "state": 2,
+                    "time": 1585582168
+                }
+            },
+            "region_country": {
+                "price_state": 1,
+                "purchase_state": 1
+            },
+            "timeline": "",
+            "release_time": 1585709520,
+            "release_time_unsure": 0,
+            "publish_time": "2020-04-01 10:52:00",
+            "disable_independent_sale": 0,
+            "sub_game_type": 0
+        },
+        {
+            "game_id": "2001400",
+            "e_game_name": "Rhythm Fighter",
+            "game_name": "节奏快打",
+            "name": "节奏快打",
+            "game_type": 0,
+            "master_game_id": 0,
+            "category": "1",
+            "poster_url_h": "https://wegame.gtimg.com/g.2001400-r.15214/info/5710578ac97442e41e5476144a9e9786.jpg",
+            "poster_url_v": "https://wegame.gtimg.com/g.2001400-r.15214/info/fb4410863b11b4f51007117e656b204f.jpg",
+            "3rd_class": "",
+            "4th_class": "",
+            "top_class": "3",
+            "sub_class": "15",
+            "show_prate": "",
+            "is_testing": 0,
+            "is_recommend_result": 0,
+            "recommend_algorithm": "",
+            "release_config": {
+                "sell": {
+                    "state": 2,
+                    "time": 1590634800
+                },
+                "download": {
+                    "state": 2,
+                    "time": 1590634800
+                },
+                "play": {
+                    "state": 2,
+                    "time": 1590634800
+                },
+                "display": {
+                    "state": 2,
+                    "time": 1588129200
+                }
+            },
+            "region_country": {
+                "price_state": 1,
+                "purchase_state": 1
+            },
+            "timeline": "",
+            "release_time": 1590634800,
+            "release_time_unsure": 0,
+            "publish_time": "2020-05-28 11:00:00",
+            "disable_independent_sale": 0,
+            "sub_game_type": 0
+        },
+        {
+            "game_id": "2001062",
+            "e_game_name": "",
+            "game_name": "月圆之夜（典藏版）",
+            "name": "月圆之夜（典藏版）",
+            "game_type": 2,
+            "master_game_id": 0,
+            "category": "1",
+            "poster_url_h": "https://wegame.gtimg.com/g.2001062-r.e0d64/info/30f02298dcaa8685a94a58e187a30e51.jpg",
+            "poster_url_v": "https://wegame.gtimg.com/g.2001062-r.e0d64/info/3616deae48388fbf3f9d1dec746f7dc3.jpg",
+            "3rd_class": "",
+            "4th_class": "",
+            "top_class": "",
+            "sub_class": "",
+            "show_prate": "",
+            "is_testing": 0,
+            "is_recommend_result": 0,
+            "recommend_algorithm": "",
+            "release_config": {
+                "sell": {
+                    "state": 2,
+                    "time": 1564105500
+                },
+                "download": {
+                    "state": 2,
+                    "time": 1564105500
+                },
+                "play": {
+                    "state": 2,
+                    "time": 1564105500
+                },
+                "display": {
+                    "state": 2,
+                    "time": 1562918542
+                }
+            },
+            "region_country": {
+                "price_state": 1,
+                "purchase_state": 1
+            },
+            "timeline": "",
+            "release_time": 1564105500,
+            "release_time_unsure": 0,
+            "publish_time": "2019-07-26 09:45:00",
+            "disable_independent_sale": 0,
+            "sub_game_type": 0
+        },
+        {
+            "game_id": "2000596",
+            "e_game_name": "Starena",
+            "game_name": "星际角斗场",
+            "name": "星际角斗场",
+            "game_type": 0,
+            "master_game_id": 0,
+            "category": "1",
+            "poster_url_h": "https://wegame.gtimg.com/g.2000596-r.7eb99/info/ef82249e7040e4e269b2b64d4255363e.jpg",
+            "poster_url_v": "https://wegame.gtimg.com/g.2000596-r.7eb99/info/a7f5f7b8c08e11392b52e7807d8d8357.jpg",
+            "3rd_class": "",
+            "4th_class": "",
+            "top_class": "3",
+            "sub_class": "15",
+            "show_prate": "",
+            "is_testing": 0,
+            "is_recommend_result": 0,
+            "recommend_algorithm": "",
+            "release_config": {
+                "sell": {
+                    "state": 2,
+                    "time": 1590048000
+                },
+                "download": {
+                    "state": 2,
+                    "time": 1590048000
+                },
+                "play": {
+                    "state": 2,
+                    "time": 1590048000
+                },
+                "display": {
+                    "state": 2,
+                    "time": 1588831918
+                }
+            },
+            "region_country": {
+                "price_state": 1,
+                "purchase_state": 1
+            },
+            "timeline": "",
+            "release_time": 1590048000,
+            "release_time_unsure": 0,
+            "publish_time": "2020-05-21 16:00:00",
+            "disable_independent_sale": 0,
+            "sub_game_type": 0
+        }
+    ]
+}

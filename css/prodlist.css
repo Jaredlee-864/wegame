@@ -1,0 +1,146 @@
+.fr-main {
+  width: 1000px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+.page-store-gamelist .panel-favourable {
+  height: 240px;
+  margin-bottom: 28px;
+}
+.tui-panel {
+  position: relative;
+  margin-bottom: 40px;
+}
+.tui-panel .tui-panel-bd {
+  position: relative;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide {
+  width: 320px;
+  height: 222px !important;
+}
+.swiper-slide:hover {
+  box-shadow: 7px 0 14px -3px rgba(0, 0, 0, 0.1),
+    8px 0 16px -8px rgba(0, 0, 0, 0.2);
+}
+.swiper-slide .figure {
+  width: 100%;
+  height: 148px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: pointer;
+  background-size: 50px 36px;
+}
+.figure > img {
+  font-size: 0;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: relative;
+}
+.swiper-slide .figure-info {
+  box-sizing: border-box;
+  height: 74px;
+  padding: 0 20px;
+  cursor: pointer;
+  border-radius: 0 0 4px 4px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  min-height: 30px;
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  z-index: 3;
+}
+.swiper-slide .figure-info .figure-info-tit {
+  line-height: 20px;
+  margin: 12px 0 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  font-size: 15px;
+  font-weight: 700;
+}
+.swiper-slide .figure-info .figure-info-tit a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  color: black;
+}
+.swiper-slide .tui-figure .figure-other .f-left {
+  font-size: 12px;
+  max-width: 90%;
+}
+.swiper-slide .figure-other .item {
+  height: 25px;
+}
+.figure-other .f-left {
+  float: left;
+  max-width: 60%;
+}
+.tui-price {
+  height: 25px;
+  display: inline-block;
+  line-height: 25px;
+}
+.price-tag,
+.price-tag i {
+  font-size: 14px;
+}
+.price-tag {
+  font-weight: 700;
+  color: #fff;
+  background-color: #ff6f00;
+  border-radius: 2px;
+  display: inline-block;
+  margin-right: 4px;
+  min-width: 50px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  padding: 0 6px;
+  vertical-align: middle;
+}
+.tui-price .price-tag-val {
+  display: inline-block;
+  vertical-align: middle;
+}
+.swiper-slide .f-left .tui-price .price-new {
+  color: #ff6f00;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  padding: 0 4px 0 0;
+  height: 23px;
+  line-height: 23px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.swiper-slide .f-left .tui-price .price-new i {
+  font-size: 14px;
+  color: #ff6f00;
+}
+.price-new,
+.price-old {
+  display: inline-block;
+  vertical-align: middle;
+  height: 23px;
+  line-height: 23px;
+}
+.swiper-button-next {
+  right: -40px !important;
+  left: auto;
+  background: rgba(0, 0, 0, 0.15);
+}
+.swiper-button-prev {
+  right: auto;
+  left: -40px !important;
+  background: rgba(0, 0, 0, 0.15);
+}

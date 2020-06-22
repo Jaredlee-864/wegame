@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <script src="../js/jQuery.js"></script>
+  </head>
+  <body>
+    <div class="widget-login-mask" style="">
+      <div class="widget-login">
+        <div class="widget-login-hd">
+          <ul class="widget-login-nav">
+            <li>
+              <a
+                href="javascript:;"
+                class="widget-login-channel widget-login-channel--qq cur"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="javascript:;"
+                class="widget-login-channel widget-login-channel--wechat"
+              ></a>
+            </li>
+          </ul>
+          <a href="javascript:;" class="widget-login-close">
+            x
+          </a>
+        </div>
+        <div class="widget-login-bd">
+          <!-- <div
+            class="widget-login-item widget-login-item--qq"
+            style="display: none;"
+          >
+            <div class="widget-login-detail">
+              <p class="widget-login-tit">登录</p>
+              <form>
+                <div class="widget-login-account">
+                  <div class="widget-login-input">
+                    <input
+                      type="text"
+                      maxlength="64"
+                      placeholder="请输入邮箱帐号"
+                    />
+                    <p></p>
+                  </div>
+                  <div class="widget-login-input widget-login-input--password">
+                    <input type="password" maxlength="16" placeholder="密码" />
+                    <p></p>
+                  </div>
+                </div>
+              </form>
+              <a href="javascript:;" class="widget-login-btn"
+                ><span>登 录</span></a
+              >
+              <div class="widget-login-toolbar">
+                <ul class="widget-login-linklist">
+                  <li>
+                    <a
+                      href="//www.wegame.com.cn/platform/sign/reset_pass.html"
+                      target="_blank"
+                      class="widget-login-link"
+                    >
+                      忘记密码
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="//www.wegame.com.cn/platform/sign/join.html"
+                      target="_self"
+                      class="widget-login-link"
+                    >
+                      注册新用户
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> -->
+          <div class="web_qr_login" id="web_qr_login" style="display: block;">
+            <div class="web_qr_login_show" id="web_qr_login_show">
+              <div class="web_login" id="web_login">
+                <div class="tips" id="tips">
+                  <div class="title" id="title_2">帐号密码登录</div>
+                  <div id="qlogin_entry">
+                    推荐使用<a
+                      class="switch_btn_focus link_tips"
+                      hidefocus="true"
+                      id="switcher_qlogin"
+                      href="javascript:void(0);"
+                      tabindex="7"
+                      >快速安全登录</a
+                    >，防止盗号。
+                  </div>
+                  <div
+                    class="operate_tips"
+                    id="operate_tips"
+                    style="display: none;"
+                  >
+                    <span class="operate_content"
+                      >手机号码也可登录哦，
+                      <a
+                        class="tips_link"
+                        id="bind_account"
+                        href="javascript:void(0);"
+                        >登录个人中心绑定</a
+                      > </span
+                    ><span class="down_row"></span>
+                  </div>
+                </div>
+                <div class="login_form">
+                  <form
+                    id="loginform"
+                    autocomplete="off"
+                    name="loginform"
+                    action=""
+                    method="post"
+                    target="0"
+                    style="margin: 0px;"
+                  >
+                    <div class="uinArea" id="uinArea">
+                      <label
+                        class="input_tips"
+                        id="uin_tips"
+                        for="u"
+                        data-onlyqq="QQ号码"
+                        >支持QQ号/邮箱/手机号登录</label
+                      >
+                      <div class="inputOuter">
+                        <input
+                          type="text"
+                          class="inputstyle"
+                          id="u"
+                          name="u"
+                          value=""
+                          tabindex="1"
+                        />
+                        <em
+                          class="uin_del"
+                          id="uin_del"
+                          href=""
+                          style="display: block;"
+                        ></em>
+                      </div>
+                    </div>
+                    <div class="pwdArea" id="pwdArea">
+                      <label
+                        class="input_tips"
+                        id="pwd_tips"
+                        for="p"
+                        style="display: block;"
+                        >密码</label
+                      >
+                      <div class="inputOuter">
+                        <input
+                          type="password"
+                          class="inputstyle password"
+                          id="p"
+                          name="p"
+                          value=""
+                          maxlength="16"
+                          tabindex="2"
+                        />
+                      </div>
+                      <!-- <div
+                        class="lock_tips"
+                        id="caps_lock_tips"
+                        style="display: none;"
+                      >
+                        <span class="lock_tips_row"></span>
+                        <span>大写锁定已打开</span>
+                      </div> -->
+                    </div>
+                    <!-- <div class="verifyArea" id="verifyArea">
+                      <div class="verifyinputArea" id="verifyinputArea">
+                        <label class="input_tips" id="vc_tips" for="verifycode"
+                          >验证码</label
+                        >
+                        <div class="inputOuter">
+                          <input
+                            name="verifycode"
+                            type="text"
+                            class="inputstyle verifycode"
+                            id="verifycode"
+                            value=""
+                            tabindex="3"
+                          />
+                        </div>
+                      </div>
+                      <div class="verifyimgArea" id="verifyimgArea">
+                        <img
+                          class="verifyimg"
+                          id="verifyimg"
+                          title="看不清，换一张"
+                        />
+                        <a
+                          tabindex="4"
+                          href="javascript:void(0);"
+                          class="verifyimg_tips"
+                          >看不清，换一张</a
+                        >
+                      </div>
+                    </div> -->
+                    <div class="submit">
+                      <em class="login_button"
+                        ><input
+                          type="submit"
+                          value="登 录"
+                          class="btn"
+                          id="login_button"
+                      /></em>
+                    </div>
+                  </form>
+                </div>
+                <!-- <div class="guanjia hide">
+                  <img
+                    class="guanjia_logo hide"
+                    src="//imgcache.qq.com/ptlogin/v4/style/40/images/logo.png"
+                  /><input type="checkbox" class="guanjia_checkbox hide" /><span
+                    class="guanjia_tips"
+                  ></span>
+                </div> -->
+              </div>
+              <div class="bottom" id="bottom_web" style="display: block;">
+                <a
+                  href="https://ssl.ptlogin2.qq.com/ptui_forgetpwd"
+                  class="link"
+                  id="forgetpwd"
+                  target="_blank"
+                  >忘了密码？</a
+                >
+                <span class="dotted">|</span>
+                <a
+                  href="https://ssl.ptlogin2.qq.com/j_newreg_url"
+                  class="link"
+                  target="_blank"
+                  >注册新帐号</a
+                >
+                <span class="dotted">|</span>
+                <a
+                  class="link"
+                  id="feedback_web"
+                  href="https://support.qq.com/products/14800"
+                  target="_blank"
+                  >意见反馈</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/login.js"></script>
+</html>
