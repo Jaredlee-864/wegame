@@ -1,25 +1,173 @@
-<div class="swiper-slide">
-  <div class="figure">
-    <img
-      src=${val["poster_url_h"]}
-      alt=${val["name"]}
-      class="pic"
-    />
-  </div>
-  <div class="figure-info">
-    <h3 class="figure-info-tit">
-      <a href="https://www.wegame.com.cn/store/${val["game_id"]}>"${val["game_name"]}"</a>
-    </h3>
-    <div class="figure-other cf">
-      <div class="item f-left">
-        <div class="tui-price">
-          <span class="price-new"
-            ><i>¥</i>
-            56
-          </span>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/swiper.min.css" />
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #000;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+      .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+
+      .gallery-top {
+        height: 80%;
+        width: 100%;
+      }
+
+      .gallery-thumbs {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .gallery-thumbs .swiper-slide {
+        height: 100%;
+        opacity: 0.4;
+      }
+
+      .gallery-thumbs .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="swiper-container gallery-top">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
       </div>
-      <div class="item f-right"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next swiper-button-white"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
     </div>
-  </div>
-</div>
+    <div class="swiper-container gallery-thumbs">
+      <div class="swiper-wrapper">
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+        <div
+          class="swiper-slide"
+          style="background-image: url(../img/wegame-logo.png);"
+        ></div>
+      </div>
+    </div>
+  </body>
+  <script src="../js/swiper.min.js"></script>
+  <script>
+    var galleryThumbs = new Swiper(".gallery-thumbs", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      loop: true,
+      freeMode: true,
+      loopedSlides: 5, //looped slides should be the same
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    var galleryTop = new Swiper(".gallery-top", {
+      spaceBetween: 10,
+      loop: true,
+      loopedSlides: 5, //looped slides should be the same
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: galleryThumbs,
+      },
+    });
+  </script>
+</html>

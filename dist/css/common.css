@@ -12,7 +12,12 @@ h6 {
   font-size: 100%;
   font-weight: 400;
 }
-i {
+ul,
+li {
+  list-style: none;
+}
+i,
+em {
   font-style: normal;
 }
 a {

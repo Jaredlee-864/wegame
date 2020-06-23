@@ -1,0 +1,38 @@
+{
+    "result": 1,
+    "data": {
+        "result": 0,
+        "total_count": 2,
+        "article_list": [
+            {
+                "cover": "https://tgphpic-70080.picnjc.qpic.cn/g.2001255-r.fdd10/1592551925997_imagecropper_89403644-eb01-49b7-afcc-1348e14dc5e0/0",
+                "version_game_id": 2001255,
+                "owner": "216346522",
+                "article_id": "a6fc28a725284888b973b0f1ca01a329",
+                "title": "6月19日18:00开放WeGame新区“漫天花雨”",
+                "send_date": "2020-06-19 15:32:42",
+                "abstract": "6月9日《仙侠世界2》入驻WeGame以来，服务器火爆，众多玩家慕名而来。为了让更多的WeGame玩家可以感受游戏乐趣，我们将于6月19日18:00，开放WeGame独立新区“漫天花雨”以供玩家入驻！",
+                "comm_num": 23,
+                "iid": "afdaa9ee2b6c484696a8ad36283a97f8",
+                "expose_num": 4665
+            },
+            {
+                "cover": "https://tgphpic-70080.picnjc.qpic.cn/g.2001255-r.fdd10/1592315060801_imagecropper_ae439d10-de56-4690-964f-101c6adf1ef7/0",
+                "version_game_id": 2001255,
+                "article_id": "e3a9c754a5fc4118a4b4cec96f47992c",
+                "owner": "216346522",
+                "send_date": "2020-06-16 21:44:51",
+                "title": "6月17日10:00全服更新公告",
+                "comm_num": 6,
+                "abstract": "我们将于2020年6月17日10:00对服务器进行停机维护，届时您将无法登陆游戏，维护时间根据实际情况可能会提前或者延后，对您造成的不便，敬请谅解。",
+                "tagids": [
+                    "2001255_7"
+                ],
+                "iid": "3fe6e00bf8114b529c65169f8e351b72",
+                "expose_num": 2670
+            }
+        ],
+        "errmsg": "succ"
+    },
+    "errmsg": "succ"
+}

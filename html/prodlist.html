@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/prodlist.css" />
     <link rel="stylesheet" href="../css/swiper.min.css" />
     <script src="../js/jQuery.js"></script>
@@ -51,6 +52,273 @@
           <div class="swiper-button-prev"></div>
         </div>
       </section>
+    </div>
+    <div class="fr-row">
+      <div class="frm-cont-hd-text">
+        <h2 class="frm-cont-hd-tit">搜索结果</h2>
+        <p class="frm-cont-hd-subtit">共<em class="WG__gameNumber">98</em>款</p>
+      </div>
+      <div class="fr-main cf">
+        <div class="fr-main-cont">
+          <!---->
+          <div class="frm-cont-hd">
+            <p class="frm-search-tips WG__filterNames">
+              <!---->
+              <!---->
+              <a class="tui-label-del"
+                ><span>免费</span> <i class="icon-del">×</i></a
+              >
+            </p>
+            <div class="switch-list-orderby">
+              <div class="tui-select">
+                <a class="dropdown-toggle"
+                  ><span class="select-chosen">火爆新品</span>
+                  <span class="select-arrow"></span
+                ></a>
+                <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="javascript:;" class="cur">火爆新品</a></li>
+                    <li><a href="javascript:;" class="">本周热门</a></li>
+                    <li><a href="javascript:;" class="">最新上架</a></li>
+                    <li><a href="javascript:;" class="">折扣促销</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frm-cont-bd">
+            <div class="widget-gamecard-list">
+              <ul class="gameList">
+                <!-- <li>
+                  <div class="gamecard-item">
+                    <a href="/store/2001141/msg" class="figure"
+                      ><img
+                        alt="梦三国2"
+                        src="//wegame.gtimg.com/g.2001141-r.87b21/info/d7b2e4007ba4fe0159ee968dd1e5ebed.jpg/320"
+                        onerror="this.className='img-onerror'"
+                        class="pic"
+                    /></a>
+                    <div class="figure-info tui-table-box">
+                      <div class="table-row">
+                        <div class="table-cell">
+                          <div class="gamecard-desc">
+                            <h3 class="gamecard-tit">
+                              <a href="/store/2001141/msg" title="梦三国2"
+                                >梦三国2</a
+                              >
+                            </h3>
+                            <p class="gamecard-subtit">
+                              <span class="txt-num">2020-01-09 上线</span>
+                              <span class="user-praise">
+                                推荐率
+                                <i class="txt-num">66.8%</i></span
+                              >
+                            </p>
+                            <div class="tui-label">
+                              <a
+                                href="/store/games?from=store_index.more_game.game_list&amp;tag=MMORPG"
+                                >MMORPG</a
+                              ><a
+                                href="/store/games?from=store_index.more_game.game_list&amp;tag=moba"
+                                >moba</a
+                              ><a
+                                href="/store/games?from=store_index.more_game.game_list&amp;tag=%E7%94%B5%E5%AD%90%E7%AB%9E%E6%8A%80"
+                                >电子竞技</a
+                              ><a
+                                href="/store/games?from=store_index.more_game.game_list&amp;tag=%E4%B8%89%E5%9B%BD"
+                                >三国</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="table-cell">
+                          <div class="gamecard-other">
+                            <div class="tui-price">
+                              <span class="price-new"
+                                ><em class="pricetag-current">免费</em></span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li> -->
+              </ul>
+              <!---->
+            </div>
+          </div>
+          <div class="frm-cont-fd" style="">
+            <p class="tui-page-b">
+              <a href="javascript:void(0);" class="btn-prev disabled"></a>
+              <a href="/store/games?page=0" class="page-num cur">1</a
+              ><a href="/store/games?page=1" class="page-num">2</a
+              ><a href="/store/games?page=2" class="page-num">3</a
+              ><a href="/store/games?page=3" class="page-num">4</a
+              ><a href="/store/games?page=4" class="page-num">5</a
+              ><a href="/store/games?page=5" class="page-num">6</a
+              ><a href="/store/games?page=6" class="page-num">7</a
+              ><a href="/store/games?page=7" class="page-num">8</a
+              ><a href="/store/games?page=8" class="page-num">9</a>
+              <a href="/store/games?page=1" class="btn-next"></a>
+            </p>
+          </div>
+        </div>
+        <div class="fr-main-sidebar">
+          <div class="fr-main-sidebar">
+            <!---->
+            <div id="guessLikeTags" class="tui-panel--aside panel--suggest">
+              <div class="panel-hd"><h3 id="game_lib_tag">为你推荐</h3></div>
+              <div class="panel-bd">
+                <div
+                  id="guessLikeTagsContainer"
+                  class="tui-condition-list tui-condition-list-b"
+                >
+                  <a title="冷兵器" class="condition-item"
+                    ><span>冷兵器</span></a
+                  ><a title="历史题材" class="condition-item"
+                    ><span>历史题材</span></a
+                  ><a title="唯美画风" class="condition-item"
+                    ><span>唯美画风</span></a
+                  ><a title="大型网游" class="condition-item"
+                    ><span>大型网游</span></a
+                  ><a title="最新游戏" class="condition-item"
+                    ><span>最新游戏</span></a
+                  ><a title="独立游戏" class="condition-item"
+                    ><span>独立游戏</span></a
+                  >
+                </div>
+              </div>
+              <!---->
+            </div>
+            <div id="hotTags" class="tui-panel--aside panel--hot">
+              <div class="panel-hd"><h3 id="game_lib_tag">热门标签</h3></div>
+              <div class="panel-bd">
+                <div
+                  id="hotTagsList"
+                  class="tui-condition-list tui-condition-list-b tags_list"
+                >
+                  <a title="篮球" class="condition-item"><span>篮球</span></a
+                  ><a title="单机" class="condition-item"><span>单机</span></a
+                  ><a title="免费" class="condition-item cur"
+                    ><span>免费</span></a
+                  ><a title="电子竞技" class="condition-item"
+                    ><span>电子竞技</span></a
+                  ><a title="功能游戏" class="condition-item"
+                    ><span>功能游戏</span></a
+                  ><a title="赛车竞速" class="condition-item"
+                    ><span>赛车竞速</span></a
+                  ><a title="动作冒险" class="condition-item"
+                    ><span>动作冒险</span></a
+                  ><a title="FPS" class="condition-item"><span>FPS</span></a
+                  ><a title="角色扮演" class="condition-item"
+                    ><span>角色扮演</span></a
+                  ><a title="横版过关" class="condition-item"
+                    ><span>横版过关</span></a
+                  ><a
+                    title="MMORPG"
+                    class="condition-item"
+                    style="display: none;"
+                    ><span>MMORPG</span></a
+                  ><a
+                    title="模拟经营"
+                    class="condition-item"
+                    style="display: none;"
+                    ><span>模拟经营</span></a
+                  ><a
+                    title="休闲游戏"
+                    class="condition-item"
+                    style="display: none;"
+                    ><span>休闲游戏</span></a
+                  ><a
+                    title="体育竞技"
+                    class="condition-item"
+                    style="display: none;"
+                    ><span>体育竞技</span></a
+                  ><a
+                    title="军事题材"
+                    class="condition-item"
+                    style="display: none;"
+                    ><span>军事题材</span></a
+                  ><a
+                    title="动漫画风"
+                    class="condition-item"
+                    style="display: none;"
+                    ><span>动漫画风</span></a
+                  ><a
+                    title="格斗游戏"
+                    class="condition-item"
+                    style="display: none;"
+                    ><span>格斗游戏</span></a
+                  ><a title="科幻" class="condition-item" style="display: none;"
+                    ><span>科幻</span></a
+                  ><a title="国产" class="condition-item" style="display: none;"
+                    ><span>国产</span></a
+                  >
+                </div>
+              </div>
+              <div class="panel-ft">
+                <a id="moreTags" class="btn btn-more">展开全部</a>
+              </div>
+            </div>
+            <div id="propsList" class="tui-panel--aside panel--prop">
+              <div class="panel-hd"><h3 id="game_lib_ref">应用特性</h3></div>
+              <div class="panel-bd">
+                <div id="hotTagsList" class="tui-condition-list tui-condition-list-b tags_list">
+                    <a title="篮球" class="condition-item"><span>篮球</span></a
+                    ><a title="大型网游" class="condition-item"><span>大型网游</span></a
+                    ><a title="单机" class="condition-item"><span>单机</span></a
+                    ><a title="免费" class="condition-item cur"><span>免费</span></a
+                    ><a title="电子竞技" class="condition-item"><span>电子竞技</span></a
+                    ><a title="功能游戏" class="condition-item"><span>功能游戏</span></a
+                    ><a title="赛车竞速" class="condition-item"><span>赛车竞速</span></a
+                    ><a title="FPS" class="condition-item"><span>FPS</span></a
+                    ><a title="角色扮演" class="condition-item"><span>角色扮演</span></a
+                    ><a title="横版过关" class="condition-item"><span>横版过关</span></a
+                    ><a title="MMORPG" class="condition-item" style="display: none;"
+                      ><span>MMORPG</span></a
+                    ><a title="模拟经营" class="condition-item" style="display: none;"
+                      ><span>模拟经营</span></a
+                    ><a title="体育竞技" class="condition-item" style="display: none;"
+                      ><span>体育竞技</span></a
+                    ><a title="军事题材" class="condition-item" style="display: none;"
+                      ><span>军事题材</span></a
+                    ><a title="格斗游戏" class="condition-item" style="display: none;"
+                      ><span>格斗游戏</span></a
+                    ><a title="科幻" class="condition-item" style="display: none;"
+                      ><span>科幻</span></a
+                    ><a title="国产" class="condition-item" style="display: none;"
+                      ><span>国产</span></a
+                    >
+                  </div>
+                  <div
+                    id="gamePropsList"
+                    class="tui-condition-list tui-condition-list-b"
+                  >
+                    <a title="支持多人联机" class="condition-item"
+                      ><span>支持多人联机</span></a
+                    ><a title="支持控制器" class="condition-item"
+                      ><span>支持控制器</span></a
+                    ><a title="支持模组" class="condition-item"
+                      ><span>支持模组</span></a
+                    ><a title="支持WG成就" class="condition-item"
+                      ><span>支持WG成就</span></a
+                    ><a title="支持云存档" class="condition-item"
+                      ><span>支持云存档</span></a
+                    ><a title="支持退款" class="condition-item"
+                      ><span>支持退款</span></a
+                    ><a title="含内购项" class="condition-item"
+                      ><span>含内购项</span></a
+                    ><a title="WG专属汉化" class="condition-item"
+                      ><span>WG专属汉化</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script src="../js/prodlist.js"></script>

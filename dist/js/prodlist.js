@@ -1,4 +1,5 @@
 $(function () {
+  // 顶部轮播图
   $.get("../data/depage-swiper.json", function (data) {
     let html = "";
     let arr = data["items"];
@@ -41,5 +42,69 @@ $(function () {
         prevEl: ".swiper-button-prev",
       },
     });
+  });
+
+  //商品列表渲染
+  $.get("../data/depage-resultlist.json", function (data) {
+    let html = "";
+    let arr = data["items"];
+    arr.forEach((val) => {
+      let release_time = val["publish_time"].split(" ")[0];
+      html += `<li>
+      <div class="gamecard-item">
+        <a href="https://www.wegame.com.cn/store/${val["game_id"]}/msg" class="figure" target = "_blank"
+          ><img
+            alt="${val["game_name"]}"
+            src="${val["poster_url_h"]}"
+            class="pic"
+        /></a>
+        <div class="figure-info tui-table-box">
+          <div class="table-row">
+            <div class="table-cell">
+              <div class="gamecard-desc">
+                <h3 class="gamecard-tit">
+                  <a href="https://www.wegame.com.cn/store/${val["game_id"]}/msg" title="${val["game_name"]}"
+                  target = "_blank">${val["game_name"]}</a
+                  >
+                </h3>
+                <p class="gamecard-subtit">
+                  <span class="txt-num">${release_time} 上线</span>
+                  <span class="user-praise">
+                    推荐率
+                    <i class="txt-num">66.8%</i></span
+                  >
+                </p>
+                <div class="tui-label">
+                  <a
+                    href="/store/games?from=store_index.more_game.game_list&amp;tag=MMORPG"
+                    >MMORPG</a
+                  ><a
+                    href="/store/games?from=store_index.more_game.game_list&amp;tag=moba"
+                    >moba</a
+                  ><a
+                    href="/store/games?from=store_index.more_game.game_list&amp;tag=%E7%94%B5%E5%AD%90%E7%AB%9E%E6%8A%80"
+                    >电子竞技</a
+                  ><a
+                    href="/store/games?from=store_index.more_game.game_list&amp;tag=%E4%B8%89%E5%9B%BD"
+                    >三国</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="table-cell">
+              <div class="gamecard-other">
+                <div class="tui-price">
+                  <span class="price-new"
+                    ><em class="pricetag-current">免费</em></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>`;
+    });
+    $(".gameList").append(html);
   });
 });
