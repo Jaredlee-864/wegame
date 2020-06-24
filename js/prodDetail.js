@@ -1,7 +1,6 @@
 $(function () {
   $.get("../data/gameid-datails.json", (data) => {
     //填数据
-    console.log(data["items"]);
     let info = data["items"][0];
     let gamename = info["game_name"];
     let headbg = info["dynamic_background"].replace(/\\/g, "");
@@ -25,6 +24,45 @@ $(function () {
     $(".basic-disk").text(info["basic_config_disk"] + " GB");
     $(".basic-cpu").text(info["basic_config_cpu"] + "以上B");
     $(".basic-sys").text(info["sys_opera"]);
+
+    //创建轮播图
+    let screenshot = JSON.parse(info["screenshots"].replace(/\\/g, ""));
+    let content = "";
+    let thumb = "";
+    console.log(screenshot);
+    screenshot.forEach((val) => {
+      if (val.type == 1) {
+        content += `<div
+              class="swiper-slide"
+              style="background-image:url(${val.thumb})"
+            ><video style="background-color: rgb(0, 0, 0); width: 100%; height: 100%;" poster="${val.thumb}" display: "block;" webkit-playsinline="" x-webkit-airplay="" controls = "controls" preload="preload" src="http://ugcyd.qq.com/${val.content}.p709.1.mp4"></video></div>`;
+        thumb += `<div class="swiper-slide" style="background-image:url(${val.thumb})"></div>`;
+      } else {
+        content += `<div class="swiper-slide" style="background-image:url(${val.content})"></div>`;
+        thumb += `<div class="swiper-slide" style="background-image:url(${val.thumb})"></div>`;
+      }
+    });
+    console.log(content);
+    $(".gallery-top .swiper-wrapper").append(content);
+    $(".gallery-thumbs .swiper-wrapper").append(thumb);
+
+    let galleryThumbs = new Swiper(".gallery-thumbs", {
+      spaceBetween: 10,
+      slidesPerView: 6,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+    });
+    let galleryTop = new Swiper(".gallery-top", {
+      //   spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: galleryThumbs,
+      },
+    });
   });
   $.get("../data/gamedetail-updata&activities.json", (data) => {
     //填数据

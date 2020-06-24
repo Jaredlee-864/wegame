@@ -1511,3 +1511,44 @@ div.widget-updates-box .figure-summary {
   border-radius: 2px;
   color: #3c3c3c;
 }
+
+/* 轮播图样式 */
+.fr-swiper {
+  margin-right: 300px;
+  height: auto;
+  border-top-left-radius: 2px;
+  overflow: hidden;
+}
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  height: auto !important;
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-top {
+  height: 80%;
+  width: 100%;
+}
+
+.gallery-thumbs {
+  height: 76px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}

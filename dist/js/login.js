@@ -1,6 +1,5 @@
 $(function () {
   $(".widget-login-close").click(function () {
-    console.log(1);
     $(".widget-login-mask").hide();
   });
   $("#u").focus(function () {
@@ -43,9 +42,10 @@ $(function () {
           if (data["code"] == 0) {
             alert(data["msg"]);
           } else {
+            setCookie("username", $("#u").val(), { expires: 7 });
             setTimeout(() => {
               location.href = "/html/index.html";
-            }, 2000);
+            }, 1000);
           }
         }
       );

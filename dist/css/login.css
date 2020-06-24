@@ -1,4 +1,5 @@
 .widget-login-mask {
+  display: none;
   position: fixed;
   left: 0;
   top: 0;

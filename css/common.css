@@ -147,6 +147,7 @@ div {
 }
 .header-right-login {
   display: inline-block;
+  width: 46px;
   height: 36px;
   vertical-align: middle;
 }
@@ -184,8 +185,10 @@ div {
   border-radius: 50%;
 }
 .header-right-login-detail {
+  opacity: 1;
+  z-index: 50;
   position: absolute;
-  right: 0;
+  right: -10px;
   top: 100%;
   padding-top: 7px;
   display: none;
@@ -198,6 +201,18 @@ div {
   word-wrap: normal;
   background-color: #3b3b3b;
   margin-bottom: 1px;
+}
+.header-right-login-detail:after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  right: 14px;
+  top: 3px;
+  width: 0;
+  height: 0;
+  border-color: transparent transparent #3b3b3b;
+  border-style: dashed dashed solid;
+  border-width: 0 4px 4px;
 }
 .header-right-login-todo,
 .header-right-login-txt {

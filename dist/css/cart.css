@@ -1,0 +1,638 @@
+body {
+  color: #3c3c3c;
+  font-family: Open Sans, calibri, Roboto, verdana, PingFang SC,
+    Hiragino Sans GB, Microsoft YaHei UI, Microsoft YaHei,
+    "\5FAE\8F6F\96C5\9ED1", sans-serif !important;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.we-frame-row,
+.we-frame-wrap {
+  width: 100%;
+}
+
+.we-frame-row {
+  padding-left: calc(100vw - 100%);
+}
+.we-frame-col {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.gcart-breadcrumb .we-breadcrumb {
+  display: block;
+  margin: 12px 0 0;
+}
+.we-breadcrumb,
+.we-breadcrumb > li {
+  display: inline-block;
+  font-size: 0;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+.gcart-breadcrumb .we-breadcrumb > li:after {
+  font-family: SimSun, Verdana, Helvetica Neue, Helvetica, Arial, Roboto,
+    Microsoft YaHei UI, Microsoft YaHei, PingFang SC;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 5px;
+}
+.we-breadcrumb > li:after {
+  content: ">";
+  margin: 0 10px;
+}
+.we-breadcrumb-item,
+.we-breadcrumb > li:first-of-type:after {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 26px;
+  color: #3c3c3c;
+  cursor: pointer;
+}
+.we-breadcrumb > li:last-of-type .we-breadcrumb-item {
+  color: #757575;
+  cursor: default;
+}
+.gcart-breadcrumb .we-breadcrumb-item {
+  font-size: 14px;
+  -webkit-transition: color 0.15s linear;
+  transition: color 0.15s linear;
+}
+.we-breadcrumb > li:last-of-type:after {
+  display: none;
+}
+.cart-list-panel .we-panel {
+  margin-bottom: 0;
+}
+.we-panel {
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+.we-panel {
+  width: 100%;
+}
+.cart-list-panel .we-panel-hd {
+  height: auto;
+  min-height: 75px;
+}
+.we-panel-hd {
+  position: relative;
+  height: 40px;
+}
+.cart-list-panel .we-panel-tit {
+  padding: 20px 0 15px;
+}
+.cart-list-panel .we-panel-tit,
+.cart-list-panel .we-panel-tit h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+.cart-list-panel .we-panel-tit,
+.cart-list-panel .we-panel-tit h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+.text-number-tips {
+  padding: 0 5px;
+}
+.cart-list-panel .we-panel-bd {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  min-height: 314px;
+  margin-bottom: 0;
+}
+.we-panel-bd {
+  position: relative;
+}
+.gcell {
+  position: relative;
+  max-height: 104px;
+  -webkit-transition: background-color 0.2s linear;
+  transition: background-color 0.2s linear;
+}
+.gcell-inner {
+  display: table;
+  width: 100%;
+}
+.gcell-bd,
+.gcell-ft,
+.gcell-hd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.gcell-bd,
+.gcell-hd {
+  height: 104px;
+  cursor: pointer;
+}
+.gcell-hd {
+  width: 63px;
+  text-align: center;
+}
+.we-checkbox {
+  display: inline-block;
+  font-size: 0;
+  white-space: nowrap;
+  word-wrap: normal;
+  vertical-align: top;
+  color: #757575;
+}
+.we-checkbox-label,
+.we-checkbox-original,
+.we-checkbox:before {
+  display: inline-block;
+  vertical-align: middle;
+}
+.we-checkbox:before {
+  content: "";
+  width: 0;
+  height: 100%;
+}
+.we-checkbox-original {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  border-radius: 2px;
+  background-color: hsla(0, 0%, 100%, 0.3);
+  border: 1px solid #bfbfbf;
+  cursor: pointer;
+}
+.we-checkbox-label,
+.we-checkbox-original,
+.we-checkbox:before {
+  display: inline-block;
+  vertical-align: middle;
+}
+.we-checkbox-original:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAYAAAAxrNxjAAAAZ0lEQ…Yp4IUzbhHnqMejxCWiU/whR1DiiSHBcvSFEnxHgTFF8AGmWRejkgrSAwAAAABJRU5ErkJggg==)
+    no-repeat 1px 3px;
+}
+.gcell-bd:after {
+  content: "";
+  border-bottom: 1px solid #e4e4e4;
+  position: absolute;
+  left: 63px;
+  right: 20px;
+  bottom: 0;
+}
+.gamecell-bd,
+.gamecell-ft,
+.gamecell-hd {
+  display: table-cell;
+  vertical-align: middle;
+}
+.gamecell-hd {
+  width: 130px;
+  padding-right: 20px;
+}
+.gamecell-hd .we-image {
+  width: 130px;
+  height: 72px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+  background: #f4f4f4;
+  background: rgba(0, 0, 0, 0.08);
+}
+.gamecell-bd {
+  width: 540px;
+}
+.we-image--progressive {
+  position: relative;
+  overflow: hidden;
+  outline: 0;
+}
+.we-image {
+  display: inline-block;
+  font-size: 0;
+  word-wrap: normal;
+}
+.we-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.we-image-figure {
+  position: relative;
+}
+.gamecell-tit {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 6px;
+  color: #3c3c3c;
+}
+.gamecell-game-tit {
+  text-overflow: ellipsis;
+  max-width: 400px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.gamecell-game-tit,
+.gamecell-status {
+  height: 20px;
+  line-height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #3c3c3c;
+}
+.gamecell-meta {
+  color: #757575;
+  font-size: 13px;
+}
+.gamecell-meta-item {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.gamecell-date {
+  padding: 0 3px 0 0;
+}
+.gamecell-ft {
+  width: 155px;
+}
+.widget-price {
+  min-height: 27px;
+  font-size: 0;
+}
+.widget-price .widget-price-text:first-child {
+  padding-left: 10px;
+}
+.widget-price--light .widget-price-text {
+  padding-right: 0;
+}
+.widget-price-text {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+.widget-price-new {
+  font-size: 20px;
+  font-size: 0;
+  font-weight: 700;
+  color: #ff6f00;
+}
+.widget-price-mint,
+.widget-price-new .widget-price-mint {
+  padding: 0 2px 0 0;
+  font-size: 14px;
+  font-family: Calibri, Verdana, Helvetica Neue, Helvetica, Arial, Roboto,
+    PingFang SC, Microsoft YaHei UI, Microsoft YaHei;
+}
+.widget-price-new span {
+  font-size: 18px;
+}
+.widget-price-old {
+  font-size: 14px;
+  padding: 0 0 0 8px;
+  color: #757575;
+}
+.gcell-ft {
+  width: 80px;
+  padding-right: 30px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.gcell-slot-group {
+  white-space: nowrap;
+}
+.slot-item-del {
+  width: 40px;
+  display: block;
+  text-align: right;
+  float: right;
+  margin-left: 20px;
+  line-height: 24px;
+  color: #757575;
+  font-size: 14px;
+}
+.slot-item-del .gcart-btn {
+  display: none;
+}
+.gcart-btn {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+}
+.gcart-icon--del {
+  background: url(//wegame.gtimg.com/g.55555-r.c4663/cart/images/ico-del.9df674d2.png)
+    no-repeat;
+}
+.gcart-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  opacity: 0.4;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.gcell-slot-group:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+/* 下部浮动操作板块 */
+.cart-operate-panel {
+  position: absolute;
+  left: 0px;
+  right: 0;
+  bottom: 0;
+}
+.cart-operate {
+  width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  position: relative;
+  z-index: 50;
+}
+.cart-operate,
+.gcart-ft {
+  min-height: 140px;
+}
+.cart-operate-info {
+  padding: 20px 30px 16px;
+  position: relative;
+  overflow: hidden;
+  min-height: 68px;
+}
+.ext-info,
+.s-avatar {
+  float: left;
+}
+.ext-info {
+  margin: 8px 8px 0 0;
+  color: #757575;
+}
+.s-avatar .we-image,
+.s-avatar .we-image.error {
+  width: 32px;
+  height: 32px;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px 0 0;
+  background: #f3f3f3
+    url(//wegame.gtimg.com/g.55555-r.c4663/cart/images/avatar-60.e58e01c3.png)
+    no-repeat;
+  background-size: 100% 100%;
+}
+.s-avatar-name {
+  vertical-align: middle;
+  line-height: 32px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.s-avatar-id,
+.s-avatar-name,
+.s-avatar-name-txt {
+  display: inline-block;
+}
+.s-avatar-name-txt {
+  font-weight: 400;
+  color: #757575;
+}
+.cart-price-discount {
+  float: right;
+  color: #757575;
+  font-size: 14px;
+}
+.price-pre-counts {
+  padding: 0 20px 0 0;
+}
+.price-pre-counts,
+.price-pre-discount {
+  display: inline-block;
+}
+.price-pre-counts-txt {
+  padding: 0 5px 0 0;
+}
+.widget-price--thin {
+  display: inline-block;
+  vertical-align: middle;
+  min-height: 20px;
+}
+.widget-price {
+  min-height: 27px;
+  font-size: 0;
+}
+.cart-price-discount .widget-price-text:first-child {
+  padding: 0;
+  margin: -2px 0 0;
+}
+.widget-price--thin .widget-price-new {
+  color: #757575;
+  font-weight: 400;
+  font-size: 14px;
+}
+.cart-operate-split {
+  position: relative;
+  z-index: 10;
+}
+.cart-operate-split-l {
+  left: -1px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.cart-operate-split-l,
+.cart-operate-split-r {
+  width: 8px;
+  height: 16px;
+  overflow: hidden;
+  position: absolute;
+  display: block;
+  top: 50%;
+  margin-top: -8px;
+}
+.cart-operate-split-l:before,
+.cart-operate-split-r:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  background-color: #eee;
+}
+.cart-operate-split-r {
+  right: -1px;
+}
+.frame-cart-pay.pin .cart-operate:after {
+  opacity: 1;
+}
+.cart-operate:after {
+  content: "";
+  height: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20px;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(transparent),
+    to(rgba(0, 0, 0, 0.12))
+  );
+  background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.12));
+  opacity: 0;
+}
+.cart-operate-pay {
+  position: relative;
+  height: 70px;
+}
+.cart-operate-pay .coupon-box-select {
+  left: 40px;
+}
+.coupon-box-select {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  margin-top: -16px;
+  min-width: 150px;
+  text-align: left;
+}
+.coupon-box-select .coupon-btn {
+  font-size: 14px;
+  color: #3c3c3c;
+  background: url(//wegame.gtimg.com/g.55555-r.c4663/cart/images/coupon-imgs.a3915fec.png)
+    no-repeat 100% -343px;
+  height: 33px;
+  cursor: pointer;
+  display: block;
+  padding-right: 10px;
+}
+.coupon-box-select .coupon-btn--default > div {
+  background-position: 0 -824px;
+}
+.coupon-box-select .coupon-btn > div {
+  height: 33px;
+  line-height: 33px;
+  background: url(//wegame.gtimg.com/g.55555-r.c4663/cart/images/coupon-imgs.a3915fec.png)
+    no-repeat 0 -343px;
+  padding: 0 5px 0 20px;
+  position: relative;
+  cursor: pointer;
+  color: #3c3c3c;
+  margin-left: -10px;
+}
+.coupon-btn .txt-num {
+  padding: 0 4px;
+}
+.coupon-box-select .coupon-btn > div:after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url(//wegame.gtimg.com/g.55555-r.c4663/cart/images/coupon-imgs.a3915fec.png)
+    no-repeat -50px -290px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -3px 0 0 4px;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.cart-pay-area {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 14px;
+  color: #757575;
+  padding: 15px 30px 0 0;
+}
+.cart-price-box,
+.protocol-cont {
+  display: inline-block;
+  vertical-align: middle;
+}
+.cart-price-tips {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20px 0 0;
+  margin: -5px 0 0;
+}
+.widget-price--cart {
+  display: inline-block;
+  vertical-align: baseline;
+}
+.widget-price--cart .widget-price-text:first-child {
+  padding-left: 0;
+}
+.widget-price--cart .widget-price-text {
+  vertical-align: baseline;
+  padding: 0;
+}
+.widget-price-new {
+  font-size: 18px;
+  font-size: 0;
+  font-weight: 700;
+  color: #ff6f00;
+}
+.widget-price--cart .widget-price-new .widget-price-mint,
+.widget-price--cart .widget-price-new i {
+  font-size: 16px;
+}
+.widget-price--cart .widget-price-new span {
+  font-size: 24px;
+}
+.widget-pbutton {
+  display: inline-block;
+  vertical-align: middle;
+}
+.we-button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 20px;
+  font-size: 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 26px;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.widget-pbutton .we-button.disabled,
+.widget-pbutton .we-button.disabled:hover {
+  background-color: #eee;
+  color: #bfbfbf;
+  border: none;
+  cursor: pointer;
+}
+.widget-pbutton .we-button {
+  min-width: 135px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #ffca28;
+  color: #000;
+  border-radius: 2px;
+  border-color: #ffca28;
+  font-weight: 700;
+  font-size: 15px;
+  overflow: visible;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
