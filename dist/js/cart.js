@@ -1,4 +1,13 @@
 $(function () {
+  // 插入头部尾部
+  $("<header></header>").insertBefore("body div:first");
+
+  $("header").load("../html/header.html", function () {});
+  $("<div class='widget-login-mask'></div>").appendTo("body");
+  $(".widget-login-mask").load("../html/login.html");
+  $.getScript("../js/login.js");
+  $.getScript("../js/common.js");
+
   let totalprodele = $(".text-number-tips");
   let shouldpayele = $(".widget-price-val:last em");
   let totalnumberele = $(".price-pre-counts-txt");
@@ -39,13 +48,17 @@ $(function () {
     }
     totalnumberele.text(checkedboxele.length);
     shouldpayele.text(totalprice);
-    totalpriceele.text(`款内容合计:${totalprice}`);
-
-    if (totalpriceele.text() == "0") {
-      $(".widget-price--thin:first").show();
-      console.log(1);
-    } else {
-      $(".widget-price--thin:first").hide();
+    totalpriceele.text(`款内容合计: ${totalprice}`);
+    if (totalprice == 0) {
+      totalprice = "--";
+      totalpriceele.text(`款内容合计: ${totalprice}`);
     }
+
+    // if (totalpriceele.text() == "0") {
+    //   $(".widget-price--thin:first").show();
+    //   console.log(1);
+    // } else {
+    //   $(".widget-price--thin:first").hide();
+    // }
   });
 });

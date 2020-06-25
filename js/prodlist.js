@@ -1,4 +1,25 @@
 $(function () {
+  // 插入头部尾部和侧边导航
+  $("<header></header>").insertBefore("body div:first");
+  $("<footer></footer>").appendTo("body");
+  $("<div class='gsider'></div>").appendTo("body");
+  $("<div class='widget-login-mask'></div>").appendTo("body");
+  $("header").load("../html/header.html", function () {
+    // let js = document.createElement("script");
+    // js.src = "../js/common.js";
+    // $("body").append(js);
+  });
+  $("footer").load("../html/footer.html");
+  $(".gsider").load("../html/gsider.html", function () {
+    $(".gsider-button-index").hide();
+    $(".gsider-button-bottom")
+      .addClass("gsider-line")
+      .css({ paddingBottom: "8px" });
+  });
+  $(".widget-login-mask").load("../html/login.html");
+
+  $.getScript("../js/login.js");
+  $.getScript("../js/common.js");
   // 顶部轮播图
   $.get("../data/depage-swiper.json", function (data) {
     let html = "";

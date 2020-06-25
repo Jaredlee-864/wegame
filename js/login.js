@@ -42,7 +42,10 @@ $(function () {
           if (data["code"] == 0) {
             alert(data["msg"]);
           } else {
-            setCookie("username", $("#u").val(), { expires: 7 });
+            setCookie("username", $("#u").val(), {
+              expires: 7,
+              path: "/",
+            });
             setTimeout(() => {
               location.href = "/html/index.html";
             }, 1000);

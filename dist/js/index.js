@@ -64,7 +64,7 @@ $(function () {
               type = "游戏";
             }
             if (index == i) {
-              html += `<li class="swiper-menu-li swiper-pagination-custom-active">
+              html += `<li class="swiper-menu-li swiper-pagination-custom-active" data-index = "${i}">
                 <a href="" class="swiper-menu-link"
                   ><div class="swiper-menu-tit">
                     <strong class="swiper-tag swiper-tag--act"
@@ -79,7 +79,7 @@ $(function () {
                 >
               </li>`;
             } else {
-              html += `<li class="swiper-menu-li swiper-pagination-custom">
+              html += `<li class="swiper-menu-li swiper-pagination-custom" data-index = "${i}">
               <a href="" class="swiper-menu-link"
                 ><div class="swiper-menu-tit">
                   <strong class="swiper-tag swiper-tag--act"
@@ -103,32 +103,52 @@ $(function () {
         delay: 2000,
       },
     });
+
+    //滑动切换到相关图片
+    // $.each($(".swiper-pagination li"), function () {
+    //   $(this).hover(
+    //     () => {
+    //       console.log(2);
+    //       bannerswiper.autoplay.stop();
+    //       let index = $(this).data("index");
+    //       // console.log($(this).data("index"));
+    //       bannerswiper.slideTo(index, 500, false);
+    //     },
+    //     function () {
+    //       console.log(1);
+    //       // console.log($(this));
+    //       bannerswiper.autoplay.start();
+    //     }
+    //   );
     // });
-    // $(".swiper-pagination li").hover(
-    //   function () {
-    //     console.log($(this));
-    //     let index = $(this).index();
-    //     swiper.slideTo(index, 500, false);
-    //     swiper.autoplay.stop();
+    // $(".swiper-pagination li").mouseover(
+    //   function (e) {
+    //     e.stopPropagation();
+    //     console.log(2);
+    //     bannerswiper.autoplay.stop();
+    //     let index = $(e.currentTarget).data("index");
+    //     console.log($(e.currentTarget).data("index"));
+    //     // console.log($(this).data("index"));
+    //     bannerswiper.slideTo(index, 500, false);
     //   },
     //   function () {
     //     console.log(1);
     //     // console.log($(this));
-    //     swiper.autoplay.start();
+    //     bannerswiper.autoplay.start();
     //   }
     // );
-    $(".swiper-pagination li").mouseover(function () {
-      console.log(1);
-      let index = $(this).index();
-      bannerswiper.slideTo(index, 500, false);
-      // swiper.autoplay.stop();
-      return false;
-    });
-    $(".swiper-pagination li").mouseout(function () {
-      console.log(1);
-      bannerswiper.autoplay.start();
-      return false;
-    });
+    // $(".swiper-pagination li").mouseover(function () {
+    //   console.log(1);
+    //   let index = $(this).index();
+    //   bannerswiper.slideTo(index, 500, false);
+    //   // swiper.autoplay.stop();
+    //   return false;
+    // });
+    // $(".swiper-pagination li").mouseout(function () {
+    //   console.log(1);
+    //   bannerswiper.autoplay.start();
+    //   return false;
+    // });
   });
 
   //热点预告区
@@ -228,8 +248,4 @@ $(function () {
     });
   });
   //登陆按钮功能
-  $(".header-right-login-btn").click(function () {
-    $(".widget-login-mask").show();
-    // location.href = "../html/login.html";
-  });
 });

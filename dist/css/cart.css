@@ -9,7 +9,12 @@ body {
 :before {
   box-sizing: border-box;
 }
-
+.frame-cart-list:after {
+  content: "";
+  height: 148px;
+  width: 100%;
+  display: block;
+}
 .we-frame-row,
 .we-frame-wrap {
   width: 100%;
@@ -352,8 +357,8 @@ body {
 
 /* 下部浮动操作板块 */
 .cart-operate-panel {
-  position: absolute;
-  left: 0px;
+  position: fixed;
+  left: 16px;
   right: 0;
   bottom: 0;
 }

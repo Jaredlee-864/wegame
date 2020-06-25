@@ -1,4 +1,28 @@
 $(function () {
+  // 插入头部\尾部\右边导航栏\登陆页面
+  $("<header></header>").insertBefore("body div:first");
+  $("<footer></footer>").appendTo("body");
+  $("<div class='gsider'></div>").appendTo("body");
+  $("<div class='widget-login-mask'></div>").appendTo("body");
+  $("header:first").load("../html/header.html", function () {
+    // let js = document.createElement("script");
+    // js.src = "../js/common.js";
+    // $("body").append(js);
+  });
+  $("footer").load("../html/footer.html");
+  $(".gsider").load("../html/gsider.html", function () {
+    // let js = document.createElement("script");
+    // js.src = "../js/common.js";
+    // $("body").append(js);
+    $(".gsider-button-index").hide();
+    $(".gsider-button-bottom")
+      .addClass("gsider-line")
+      .css({ paddingBottom: "8px" });
+  });
+  $(".widget-login-mask").load("../html/login.html");
+  $.getScript("../js/login.js");
+  $.getScript("../js/common.js");
+
   $.get("../data/gameid-datails.json", (data) => {
     //填数据
     let info = data["items"][0];
@@ -29,7 +53,6 @@ $(function () {
     let screenshot = JSON.parse(info["screenshots"].replace(/\\/g, ""));
     let content = "";
     let thumb = "";
-    console.log(screenshot);
     screenshot.forEach((val) => {
       if (val.type == 1) {
         content += `<div
@@ -42,7 +65,6 @@ $(function () {
         thumb += `<div class="swiper-slide" style="background-image:url(${val.thumb})"></div>`;
       }
     });
-    console.log(content);
     $(".gallery-top .swiper-wrapper").append(content);
     $(".gallery-thumbs .swiper-wrapper").append(thumb);
 

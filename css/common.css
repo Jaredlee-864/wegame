@@ -359,3 +359,159 @@ div {
   font-size: 12px;
   line-height: 24px;
 }
+
+/* 右侧导航锚点 */
+.gsider {
+  width: 54px;
+  min-height: 54px;
+  position: fixed;
+  left: 50vw;
+  margin-left: 555px;
+  z-index: 150;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  background: #fff;
+  -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 54px;
+  bottom: 80px !important;
+}
+.gsider-group {
+  position: relative;
+}
+.gsider-group-tit {
+  font-size: 14px;
+  width: 40px;
+  display: block;
+  font-weight: 700;
+  text-align: center;
+  margin: 18px auto 0;
+  line-height: 16px;
+}
+.gsider-group-tit + .gsider-button-list {
+  margin-top: -8px;
+  position: relative;
+  padding: 15px 0 0;
+}
+.gs-button {
+  display: block;
+  width: 54px;
+  height: 37px;
+}
+.gs-button .gs-button-inner {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+.gs-button .iconfont {
+  font-size: 24px !important;
+  display: block;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -17px 0 0 -17px;
+  opacity: 0.7;
+  color: black;
+  z-index: 5;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+.gs-button .iconfont:before {
+  top: -8px;
+  opacity: 0.7;
+}
+.gs-button .tui-tips.middle.left {
+  position: absolute;
+  width: auto;
+  min-width: 15px;
+  white-space: nowrap;
+  left: auto;
+  right: 105%;
+  top: 2px;
+  opacity: 0;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  pointer-events: none;
+  padding: 9px 10px;
+}
+.tui-tips-cont > p {
+  color: #3c3c3c;
+}
+.tui-tips:after {
+  /* content: ""; */
+  width: 17px;
+  height: 9px;
+  position: absolute;
+  bottom: auto;
+  top: -9px;
+  left: 9px;
+  background-image: url(https://wegame.gtimg.com/g.55555-r.c4663/rail/images/ico-tui-tips-arrow.e5892b87.png);
+  background-size: 100% 8px;
+  background-repeat: no-repeat;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.tui-tips.left:after {
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  bottom: auto;
+  top: 13px;
+  left: auto;
+  right: -13px;
+}
+.gsider .gsider-group:last-child {
+  padding: 8px 0 15px;
+}
+.gsider-group + .gsider-group:before {
+  content: "";
+  height: 1px;
+  width: 100%;
+  background: #e4e4e4;
+  margin: 4px 0 8px;
+  display: block;
+}
+.gsider-line:before {
+  display: none !important;
+}
+.gsider .gs-cart,
+.gsider .gs-coupon,
+.gsider .gs-top {
+  height: 37px;
+}
+.gs-top {
+  display: none;
+}
+.gcart-entrance {
+  width: 54px;
+  height: 54px;
+  position: relative;
+}
+.gcart-entrance-btn,
+a.gcart-entrance-btn {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: #3c3c3c;
+}
+.gcart-entrance-btn.anim-off .gcart-entrance-num {
+  opacity: 0;
+}
+.gcart-entrance-num {
+  position: absolute;
+  right: -8px;
+  top: -1px;
+  background-color: #ff6f00;
+  border-radius: 2px;
+  font-size: 0;
+  z-index: 10;
+}
+.gcart-entrance-num,
+.gcart-entrance-num-text {
+  min-width: 18px;
+  height: 18px;
+  color: #fff;
+  text-align: center;
+}
