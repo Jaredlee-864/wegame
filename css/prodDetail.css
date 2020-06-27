@@ -431,10 +431,341 @@ span.tui-label {
 }
 .detail-gallery .detail-btn-wrap {
   position: absolute;
-  bottom: 80px;
+  bottom: 25px;
   left: 20px;
   right: 20px;
   margin-top: 6px;
+}
+.box-act-code {
+  border: 1px solid rgba(246, 156, 0, 0.5);
+  border-radius: 2px;
+  background-color: #fff9e4;
+  padding: 5px 10px;
+  color: #757575;
+  position: relative;
+  margin-bottom: 12px;
+}
+.box-act-code-tit {
+  font-size: 13px;
+  color: #f69c00;
+  font-weight: 700;
+  line-height: 21px;
+  max-width: 190px;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 40px;
+  overflow: hidden;
+}
+.box-act-discount,
+.box-act-price {
+  padding: 0 0 0 5px;
+  font-size: 13px;
+  display: inline-block;
+}
+.box-act-code-link {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -14px;
+  text-decoration: underline;
+  -webkit-text-decoration-style: dotted;
+  text-decoration-style: dotted;
+  cursor: default;
+  padding: 5px 10px;
+  display: inline-block;
+  color: #f69c00;
+}
+.box-act-code-link div.tui-tips.up {
+  width: 180px;
+  min-height: 190px;
+  padding: 0;
+  bottom: 27px;
+  right: -12px;
+  overflow: hidden;
+}
+.box-act-code-link .tui-tips:before {
+  content: "";
+  width: 155px;
+  height: 155px;
+  background-color: #e4e4e4;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: -1;
+}
+.box-act-code-link .tui-tips img {
+  width: 178px;
+  height: 178px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+.box-act-code-link-tit {
+  margin: -4px 0 10px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #757575;
+  text-align: center;
+  max-height: 38px;
+  padding: 0 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
+.fn-btn-info {
+  min-height: 26px;
+  color: #757575;
+  margin-bottom: 6px;
+}
+.fn-btn-info .price-box2 {
+  vertical-align: middle;
+  min-height: 26px;
+  display: inline-block;
+  padding: 0 8px 0 0;
+}
+.tui-price {
+  height: 25px;
+  display: inline-block;
+  line-height: 25px;
+}
+.tui-tips.up.right {
+  top: auto;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+.box-act-code-link .tui-tips {
+  visibility: hidden;
+  opacity: 0;
+}
+.tui-tips {
+  width: auto;
+  padding: 10px 16px 10px 15px;
+  border-radius: 2px;
+  font-size: 12px;
+  min-width: 120px;
+  text-align: justify;
+  background: #fff;
+  border: 1px solid #bfbfbf;
+  color: #3c3c3c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 1.5;
+  z-index: 100;
+  -webkit-box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.2),
+    0 4px 8px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 7px -3px rgba(0, 0, 0, 0.2),
+    0 4px 8px -4px rgba(0, 0, 0, 0.2);
+}
+.price-tag,
+.price-tag i {
+  font-size: 14px;
+}
+.price-tag {
+  font-weight: 700;
+  color: #fff;
+  background-color: #ff6f00;
+  border-radius: 2px;
+  display: inline-block;
+  margin-right: 4px;
+  min-width: 50px;
+  height: 23px;
+  line-height: 23px;
+  text-align: center;
+  padding: 0 6px;
+  vertical-align: middle;
+}
+.tui-price .price-tag-val {
+  display: inline-block;
+  vertical-align: middle;
+}
+.tui-price .price-tag-val .price-new:first-child {
+  padding-left: 0;
+}
+.price-new {
+  color: #ff6f00;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  padding: 0 4px;
+}
+.price-new,
+.price-old {
+  display: inline-block;
+  vertical-align: middle;
+  height: 23px;
+  line-height: 23px;
+}
+.price-new > i {
+  font-size: 14px;
+  font-weight: 400;
+}
+.price-new > i,
+.price-old > i {
+  display: inline-block;
+  padding-right: 2px;
+}
+.detail-btn-wrap .widget-btn-wp {
+  position: relative;
+  height: 48px;
+}
+.hide {
+  display: none;
+}
+.game-price .btn-buy,
+.widget-btn-wp .fn-btn {
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  font-size: 17px;
+  border: none;
+  border-radius: 2px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.download-box {
+  position: relative;
+}
+.group {
+  position: relative;
+  min-height: 48px;
+}
+.subgroup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 65px;
+  padding-right: 54px;
+}
+.game-price .btn.btn-buy,
+.widget-btn-wp .fn-btn.btn-buy {
+  background: #ffca28;
+  cursor: pointer;
+  color: #000;
+  border: none;
+}
+.fn-btn-info .price-box2 + .part-r {
+  float: none;
+  vertical-align: middle;
+  margin: 2px 0 0;
+}
+.fn-btn-info .part-r {
+  height: 22px;
+  line-height: 22px;
+  display: inline-block;
+}
+.subgroup .btn-cart {
+  width: 54px;
+  height: 48px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.btn-cart {
+  font-size: 0;
+  background-color: #efb70c;
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+.btn-cart:after {
+  content: "";
+  width: 28px;
+  height: 28px;
+  background: url(https://wegame.gtimg.com/g.55555-r.c4663/rail/game_detail/images/ico-add-cart.5d70cde0.png);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -14px 0 0 -14px;
+}
+.group .widget-btn-wp {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.btn-follow-link,
+a.btn-send-friend,
+a.btn.btn-send-friend {
+  font-size: 14px;
+  text-align: center;
+  height: 48px;
+  line-height: 48px;
+  background: transparent;
+  display: inline-block;
+  color: #757575;
+  border: 1px solid transparent;
+  border-radius: 36px;
+  width: 65px;
+  min-width: 65px;
+  padding: 0;
+  text-align: right;
+}
+.btn-send-friend:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: -2px 5px 0 0;
+  background: url(https://wegame.gtimg.com/g.55555-r.c4663/rail/game_detail/images/ico-gift.d00a7973.png)
+    no-repeat;
+}
+.protocol {
+  line-height: 21px;
+  color: #757575;
+  text-align: left;
+  padding-top: 9px;
+  max-height: 52px;
+  overflow: hidden;
+}
+.protocol span,
+.protocol span label {
+  cursor: pointer;
+  color: #757575;
+}
+.protocol span,
+.protocol span label {
+  cursor: pointer;
+  color: #757575;
+}
+.checkbox[type="checkbox"]:checked,
+.checkbox[type="checkbox"]:focus {
+  outline: none;
+}
+.checkbox-link .checkbox {
+  margin-right: 4px;
+}
+.checkbox {
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 2px;
+  border: 1px solid #bfbfbf;
+  vertical-align: -2px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.protocol a,
+.protocol a:active,
+.protocol a:link,
+.protocol a:visited {
+  text-decoration: none;
+  color: #757575;
+}
+.protocol a {
+  margin: 0 4px;
+  border-bottom: 1px dotted #757575;
 }
 .btn-get-coupon strong {
   display: block;

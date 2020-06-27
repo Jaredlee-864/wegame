@@ -122,6 +122,13 @@ body {
   -webkit-transition: background-color 0.2s linear;
   transition: background-color 0.2s linear;
 }
+.gcell:hover {
+  background-color: #f4f4f4;
+  z-index: 1;
+}
+.gcell:hover .gcart-btn {
+  display: block;
+}
 .gcell-inner {
   display: table;
   width: 100%;

@@ -57,7 +57,9 @@ $(function () {
       },
       function (data) {
         if (data["code"] == 1) {
-          location.href = "/html/login.html";
+          $("<div class='widget-login-mask'></div>").appendTo("body");
+          $(".widget-login-mask").load("../html/login.html").show();
+          $.getScript("../js/login.js");
         }
       }
     );

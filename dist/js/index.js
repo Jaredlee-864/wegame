@@ -1,4 +1,6 @@
 $(function () {
+  $("#body").toggleClass("page-ibanner--mini");
+  // .toggleClass("page-ibanner--hide");
   // 搜索框渲染
   $(".tui-search input").on("focus", () => {
     $("#dropdown-menu").show();
@@ -31,7 +33,7 @@ $(function () {
       link = link["banner_img"];
 
       html += `<div class="swiper-slide">
-      <a href="/store/48" alt="${val["ads_info"]["ad_title"]}" class = "swiper-slider-link"
+      <a href="/html/prodDetail.html" alt="${val["ads_info"]["ad_title"]}" class = "swiper-slider-link"
         ><img
           src="${link}"
           class="swiper-slide-img"
@@ -191,7 +193,7 @@ $(function () {
         >
           <div class="widget-gcard-wp">
             <div class="widget-gcard-cover">
-              <a href="/store/54">
+              <a href="/html/prodDetail.html">
                 <div class="we-image we-image--square">
                   <img
                     src="${src}"
@@ -247,5 +249,103 @@ $(function () {
       },
     });
   });
-  //登陆按钮功能
+  //推荐区数据渲染
+  $.get("../data/recommend.json", (data) => {
+    let html = "";
+    let info = data["items"][0];
+    html = `<div class="skin-panel-inner">
+    <div class="tui-panel-hd">
+      <h2 class="tui-panel-tit">蛋蛋君荐游戏</h2>
+    </div>
+    <div class="tui-panel-bd">
+      <div class="dandanjun dandanjun--theme-dark">
+        <div class="dandanjun-cont">
+          <div class="dandanjun-words">
+            <h3 class="dandanjun-tit">
+              <a
+                href=${info["jump_url"]}
+                >${info["title"]}</a
+              >
+            </h3>
+            <div class="dandanjun-desc">
+              <p>
+                <a
+                  href=${info["jump_url"]}
+                >
+                  ${info["summary"]}
+                </a>
+              </p>
+            </div>
+            <div class="dandanjun-viewmore">
+              <div class="dandanjun-btn">
+                <a href="${info["jump_url"]}" class="btn btn-more"
+                  ><span>查看专题</span><i class="ico-arrow-r"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="dandanjun-games">
+            <div class="dandanjun-games-tit">
+              <div class="dandanjun-games-words">
+                <strong class="dandanjun-games-text">本期游戏推荐</strong>
+              </div>
+              <p class="dandanjun-gtit-desc">
+                <span>共</span> <span class="txt-num">3</span> <span>款</span>
+              </p>
+            </div>
+            <div class="dandanjun-glist">
+              <div class="tui-slider-wp">
+                <div class="viewport">
+                  <ul class="tui-slider-list cf">
+                  </ul>
+                </div>
+                <!---->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dandanjun-bg">
+          <div class="dandanjun-bg-ele">
+            <div class="we-image we-image--square">
+              <img
+                src=${info["bg_url"]}
+                class="we-image-figure"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>`;
+    $(".panel-dandanjun").append(html);
+    $.get("../data/recommendsmall.json", (data) => {
+      let list = "";
+      let arr = data["items"];
+      arr.forEach((val) => {
+        list += `<li class="gs-list-item">
+                  <a
+                    href="http://www.wegame.com.cn/store/${val["game_id"]}"
+                    class="dandanjun-glist-item"
+                    ><div class="we-image we-image--square">
+                      <img
+                        src='${val["poster_url_h"]}'
+                        class="we-image-figur"
+                      /></div
+                  ></a>
+                </li>`;
+      });
+      $(".dandanjun-glist ul").append(list);
+      console.log(1);
+    });
+  });
+  // 广告下拉按钮功能
+  $(".btn-expand").click(function () {
+    $("#body").toggleClass("page-ibanner--mini");
+    if ($(".panel-ibanner").css("height") == "130px") {
+      $(".panel-ibanner").css({ height: "auto" });
+    } else {
+      $(".panel-ibanner").css("height", "130px");
+    }
+    // .toggleClass("page-ibanner--hide");
+  });
 });

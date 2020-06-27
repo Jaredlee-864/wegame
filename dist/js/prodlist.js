@@ -35,7 +35,7 @@ $(function () {
         </div>
         <div class="figure-info">
           <h3 class="figure-info-tit">
-            <a href="https://www.wegame.com.cn/store/'${val["game_id"]}'">${val["game_name"]}</a>
+            <a href="/html/prodDetail.html">${val["game_name"]}</a>
           </h3>
           <div class="figure-other cf">
             <div class="item f-left">
@@ -73,7 +73,7 @@ $(function () {
       let release_time = val["publish_time"].split(" ")[0];
       html += `<li>
       <div class="gamecard-item">
-        <a href="https://www.wegame.com.cn/store/${val["game_id"]}/msg" class="figure" target = "_blank"
+        <a href="/html/prodDetail.html" class="figure" target = "_blank"
           ><img
             alt="${val["game_name"]}"
             src="${val["poster_url_h"]}"
@@ -84,7 +84,7 @@ $(function () {
             <div class="table-cell">
               <div class="gamecard-desc">
                 <h3 class="gamecard-tit">
-                  <a href="https://www.wegame.com.cn/store/${val["game_id"]}/msg" title="${val["game_name"]}"
+                  <a href="/html/prodDetail.html" title="${val["game_name"]}"
                   target = "_blank">${val["game_name"]}</a
                   >
                 </h3>
@@ -128,4 +128,27 @@ $(function () {
     });
     $(".gameList").append(html);
   });
+
+  // 插入商品数据
+  // $.post(
+  //   "http://jx.xuzhixiang.top/ap/api/goods/goods-add.php",
+  //   {
+  //     pimg: "https://p.qpic.cn/wegame/0/oss_59117670a66d5.jpg/180 ",
+  //     pname: "仙侠世界2",
+  //     pprice: 16,
+  //     pdesc: "仙侠世界2",
+  //     uid: 34479,
+  //   },
+  //   function (data) {
+  //     console.log(data);
+  //   }
+  // );
+  // $.get("http://jx.xuzhixiang.top/ap/api/goods/goods-update.php", {
+  //   pimg:
+  //     "https://p.qpic.cn/wegame/0/b3337be80f5042cfdcd816a5c5a41ed3.jpg/180 ",
+  //   pname: "传送门骑士",
+  //   pprice: 68,
+  //   pdesc: "传送门骑士",
+  //   pid: 209812,
+  // });
 });

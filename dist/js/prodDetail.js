@@ -85,6 +85,38 @@ $(function () {
         swiper: galleryThumbs,
       },
     });
+    // 加入购物车
+    $("#buy-btn-cart").click(function () {
+      let uid = getCookie("username");
+      if (uid) {
+        $.get(
+          "http://jx.xuzhixiang.top/ap/api/add-product.php",
+          {
+            uid: uid,
+            pid: 209812,
+            pnum: 1,
+          },
+          function (data) {
+            $.get(
+              `http://jx.xuzhixiang.top/ap/api/cart-list.php?id=${uid}`,
+              function (data) {
+                if (data["data"].length != 0) {
+                  $(".gcart-entrance-num-text")
+                    .parent()
+                    .css({ opacity: 1 })
+                    .end()
+                    .text(data["data"].length);
+                  console.log(1);
+                }
+              }
+            );
+          }
+        );
+      } else {
+        $(".widget-login-mask").show();
+      }
+      //更新购物车小图标数量
+    });
   });
   $.get("../data/gamedetail-updata&activities.json", (data) => {
     //填数据

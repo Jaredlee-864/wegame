@@ -42,7 +42,8 @@ $(function () {
           if (data["code"] == 0) {
             alert(data["msg"]);
           } else {
-            setCookie("username", $("#u").val(), {
+            // 存登陆接口返回的ID,不存用户名
+            setCookie("username", data["data"]["id"], {
               expires: 7,
               path: "/",
             });

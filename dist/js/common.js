@@ -3,6 +3,7 @@ $(function () {
   let js = document.createElement("script");
   js.src = "../js/cookie-fn.js";
   $("body").append(js);
+  let uid = getCookie("username");
   //根据cookie判断登陆状态
   if (getCookie("username")) {
     $(".header-right-login:eq(0)").hide();
@@ -18,6 +19,19 @@ $(function () {
         $(".header-right-login-detail").hide();
       }
     );
+  });
+
+  //获取数据渲染购物车商品数量
+  $.get(`http://jx.xuzhixiang.top/ap/api/cart-list.php?id=${uid}`, function (
+    data
+  ) {
+    if (data["data"].length != 0) {
+      $(".gcart-entrance-num-text")
+        .parent()
+        .css({ opacity: 1 })
+        .end()
+        .text(data["data"].length);
+    }
   });
   // 点击注销清除cookie
   $(".header-right-login-todo").click(function () {
