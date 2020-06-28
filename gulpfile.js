@@ -65,4 +65,55 @@ gulp.task("server", (done) => {
   });
   done();
 });
-gulp.task("default", gulp.series("watch", "server"));
+
+gulp.task("htmlmin", (done) => {
+  gulp
+    .src("./html/*.html")
+    .pipe(uglify())
+    .pipe(
+      rename({
+        suffix: "-min",
+      })
+    )
+    .pipe(gulp.dest("dist/html"));
+  done();
+});
+gulp.task("cssmin", (done) => {
+  gulp
+    .src("./css/*.css")
+    .pipe(uglify())
+    .pipe(
+      rename({
+        suffix: "-min",
+      })
+    )
+    .pipe(gulp.dest("dist/cssl"));
+  done();
+});
+gulp.task("jsmin", (done) => {
+  gulp
+    .src("./js/*.js")
+    .pipe(uglify())
+    .pipe(
+      rename({
+        suffix: "-min",
+      })
+    )
+    .pipe(gulp.dest("dist/js"));
+  done();
+});
+gulp.task("uglify", gulp.series("htmlmin", "cssmin", "jsmin"));
+// sass转换
+gulp.task("sass", (done) => {
+  gulp
+    .src("./css/*.scss")
+    .pipe(
+      sass({
+        outputStyle: "compressed",
+      })
+    )
+    .pipe(gulp.dest("dist/css"));
+  done();
+});
+
+gulp.task("default", gulp.series("watch", "server", "sass"));

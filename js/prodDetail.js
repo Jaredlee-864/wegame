@@ -4,16 +4,9 @@ $(function () {
   $("<footer></footer>").appendTo("body");
   $("<div class='gsider'></div>").appendTo("body");
   $("<div class='widget-login-mask'></div>").appendTo("body");
-  $("header:first").load("../html/header.html", function () {
-    // let js = document.createElement("script");
-    // js.src = "../js/common.js";
-    // $("body").append(js);
-  });
+  $("header:first").load("../html/header.html", function () {});
   $("footer").load("../html/footer.html");
   $(".gsider").load("../html/gsider.html", function () {
-    // let js = document.createElement("script");
-    // js.src = "../js/common.js";
-    // $("body").append(js);
     $(".gsider-button-index").hide();
     $(".gsider-button-bottom")
       .addClass("gsider-line")
@@ -155,5 +148,15 @@ $(function () {
       </div>`;
     });
     $(".tui-panel-bd:eq(1)").html(html);
+  });
+  // 更多内容点击区
+  $(".panel-gameinfo .widget-viewmore-cont").click(function () {
+    console.log(1);
+    $(".widget-acticle").toggleClass("show");
+    if ($(this).text() == "展开全部") {
+      $(this).html("收起<i class='icon-down-d'></i>");
+    } else {
+      $(this).text("展开全部<i class='icon-down-d'></i>");
+    }
   });
 });

@@ -545,6 +545,7 @@ span.tui-label {
   opacity: 0;
 }
 .tui-tips {
+  display: none;
   width: auto;
   padding: 10px 16px 10px 15px;
   border-radius: 2px;
@@ -908,6 +909,9 @@ a.btn.btn-send-friend {
   padding-bottom: 0;
   background: #ffffff;
 }
+.show {
+  display: block;
+}
 .cf:after {
   content: "";
   display: block;
@@ -920,6 +924,21 @@ a.btn.btn-send-friend {
   max-height: 265px;
   line-height: 1.8;
   overflow: hidden;
+}
+.widget-acticle.show .cont-inner {
+  overflow: visible;
+  max-height: none;
+}
+.widget-acticle.show .widget-viewmore .icon-down-d {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+.widget-viewmore.viewmore-inner {
+  background-color: #fff;
+  position: relative;
+}
+.widget-viewmore.viewmore-inner:hover {
+  color: #f69c00;
 }
 .widget-acticle .cont-inner div,
 .widget-acticle .cont-inner p,
